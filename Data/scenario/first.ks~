@@ -16,7 +16,7 @@
 ;; Status: 
 ;; Table of Contents: 
 ;; 
-;;     Update #: 27
+;;     Update #: 11
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;
 ;;Code:
@@ -80,10 +80,9 @@
 
 
 ;;;;;;;;;;----------game exit----------;;;;;;;;;;
-*titleexit
+*titleexit 
 [eval exp='kag.onCloseQuery()']
-[jump target=*title]
-[s]
+
 ;;;;;;;;;;----------end of game exit----------;;;;;;;;;;
 
 ;;;;;;;;;;----------Chapter 1----------;;;;;;;;;;
@@ -3521,27 +3520,22 @@ m1 renming=李云萧]
 [trans method=crossfade time=1000]
 [wt]
 [position layer=message2 page=fore frame="" opacity=0 left=20 top=480 width=640 height=108 marginl=25 margint=5]
-[eval exp="f.dictEvidence = %[]"]
-[eval exp="f.charaName = %[]"]
+[eval exp="f.dictEvidence = %[]"];; use a dictionary to store the evidence
+[eval exp="f.charaName = %[]"];; use a ditcionary to store the character name
 [eval exp="f.hpBar = 5"]
-[eval exp="f.matta = %[]"]
-;;matta is japanese pronounciation, which means threating people 
-[displayInfor renming=苗星刃]
-啊，今天可是难得的放假不上课的日子啊，[wait time=200ms]你怎么还窝在寝室。[p]
-[displayInfor renming=李云萧]不行吗，没有人规定我一定要出去啊。[p]
-[cm]
-[displayInfor renming=苗星刃]今天是社团文化节啊，各个社团都在忙活展出呢。[p]
-[displayInfor renming=李云萧]啊啊啊……[wait time=200ms]为什么那么好的时间不让我睡觉呢，真是的。[p]
-算了算了，我还是起来吧。[p]
-这个人是我的室友，虽然看起来是一个人畜无害的家伙……[p]
-但是切开来的话里面是什么样子谁知道……╮(￣▽￣")╭ [p]
-master未知，职阶姑且算是弓兵，[p]
-保有技能：理科能力B，作死C，吐槽B，[p]
-睡午觉技能倒是很意外的A+。[p]
-嘛，[wait time=200ms]当然论推理能力也是相当之人。[p]
-因为名字实在太麻烦所以以后就叫喵好了。[p]
+[eval exp="f.matta = %[]"];; matta is japanese pronounciation, which
+means threating people = =
+[displayInfor renming=张]
+啊，今天可是难得的放假不上课的日子啊，[wait time=200ms]你怎么还窝在寝室。
+李云萧：不行吗，没有人规定我一定要出去啊。
+张华彦：今天是社团文化节啊，各个社团都在忙活展出呢。
+李云萧：啊，为什么那么好的时间不让我睡觉呢，真是的。
+算了算了，我还是起来吧。
+这个人是我的室友，这么说好了……这家伙每天一副人畜无害的懒散样子……但是切开的话里面绝对是黑的！
+生存能力是喵星人等级，职阶技能：理科生B，吐槽B，腹黑EX。
+当然论推理能力也是相当之人。
+另外，我们俩之间，什么关系也没有。
 
-;[s]
 
 
 

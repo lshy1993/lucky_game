@@ -11,6 +11,20 @@
 [er]
 @endmacro
 
+@macro name=displayInfor
+;this macro is used for print the name and control format of printing further informations
+
+[layopt layer=message1 page=fore visible=true]
+[current layer=message1 page=fore withback=ture]
+[er][nowait]【[ch text=%renming]】[endnowait]
+[wait time=300]
+[layopt layer=message2 page=fore visible=true]
+[current layer=message2 page=fore withback=ture]
+[er]
+@endmacro
+
+
+
 @macro name=m3
 [position layer=message3 opacity=0 visible=true left=0 top=0]
 [current layer=message3]
@@ -323,51 +337,51 @@
 [current layer=message2]
 @endmacro
 
-@macro name=lanse
+@macro name=font_blue
 [font color=0x65ccff]
 @endmacro
 
-@macro name=chengse
+@macro name=font_orange
 [font color=0xff8000]
 @endmacro
 
-@macro name=lvse
+@macro name=font_green
 [font color=0x00ff00]
 @endmacro
 
-@macro name=heise
+@macro name=font_black
 [font color=0x000000 shadow=false]
 @endmacro
 
 @macro name=xuetiao
 [image layer=2 storage=bar1 page=fore visible=true left=500 top=20]
-[if exp="f.血量==1"]
+[if exp="f.hpBar==1"]
 [image layer=3 storage=bar21 page=fore visible=true left=502 top=22]
 [endif]
-[if exp="f.血量==2"]
+[if exp="f.hpBar==2"]
 [image layer=3 storage=bar22 page=fore visible=true left=502 top=22]
 [endif]
-[if exp="f.血量==3"]
+[if exp="f.hpBar==3"]
 [image layer=3 storage=bar23 page=fore visible=true left=502 top=22]
 [endif]
-[if exp="f.血量==4"]
+[if exp="f.hpBar==4"]
 [image layer=3 storage=bar24 page=fore visible=true left=502 top=22]
 [endif]
-[if exp="f.血量==5"]
+[if exp="f.hpBar==5"]
 [image layer=3 storage=bar25 page=fore visible=true left=502 top=22]
 [endif]
 @endmacro
 
 @macro name=xuetiaoyidong
-[eval exp="f.血量=f.血量-1"]
-[if exp="f.血量==0"]
+[eval exp="f.hpBar=f.hpBar-1"]
+[if exp="f.hpBar==0"]
 [xuetiao]
 [move layer=3 path="(502,22,255)(502,22,0)" time=800]
 [wait time=600]
 [se storage=09]
 [wm]
 [endif]
-[if exp="f.血量==1"]
+[if exp="f.hpBar==1"]
 [xuetiao]
 [image layer=5 storage=bar21 page=fore visible=true left=534 top=22]
 [move layer=5 path="(534,22,255)(502,22,255)" time=800]
@@ -375,7 +389,7 @@
 [se storage=09]
 [wm]
 [endif]
-[if exp="f.血量==2"]
+[if exp="f.hpBar==2"]
 [xuetiao]
 [image layer=5 storage=bar21 page=fore visible=true left=566 top=22]
 [move layer=5 path="(566,22,255)(534,22,255)" time=800]
@@ -383,7 +397,7 @@
 [se storage=09]
 [wm]
 [endif]
-[if exp="f.血量==3"]
+[if exp="f.hpBar==3"]
 [xuetiao]
 [image layer=5 storage=bar21 page=fore visible=true left=598 top=22]
 [move layer=5 path="(598,22,255)(566,22,255)" time=800]
@@ -391,7 +405,7 @@
 [se storage=09]
 [wm]
 [endif]
-[if exp="f.血量==4"]
+[if exp="f.hpBar==4"]
 [xuetiao]
 [image layer=5 storage=bar21 page=fore visible=true left=630 top=22]
 [move layer=5 path="(630,22,255)(598,22,255)" time=800]
@@ -403,19 +417,19 @@
 @endmacro
 
 @macro name=xueguangbiao
-[if exp="f.血量==5"]
+[if exp="f.hpBar==5"]
 [image layer=5 storage=bar3 page=fore visible=true left=630 top=22]
 [endif]
-[if exp="f.血量==4"]
+[if exp="f.hpBar==4"]
 [image layer=5 storage=bar3 page=fore visible=true left=598 top=22]
 [endif]
-[if exp="f.血量==3"]
+[if exp="f.hpBar==3"]
 [image layer=5 storage=bar3 page=fore visible=true left=566 top=22]
 [endif]
-[if exp="f.血量==2"]
+[if exp="f.hpBar==2"]
 [image layer=5 storage=bar3 page=fore visible=true left=534 top=22]
 [endif]
-[if exp="f.血量==1"]
+[if exp="f.hpBar==1"]
 [image layer=5 storage=bar3 page=fore visible=true left=502 top=22]
 [endif]
 [action layer=5 module=LayerBlinkModeModule showtime=1000 hidetime=500]

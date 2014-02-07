@@ -9,7 +9,7 @@
 [wt]
 [wait time=200]
 [m2]
-[lvse]
+[font_green]
 ？
 @dazi
 ？
@@ -66,7 +66,7 @@
 [wt]
 [wait time=200]
 [m2]
-[lvse]
+[font_green]
 ？
 @dazi
 ？
@@ -123,7 +123,7 @@
 [wt]
 [wait time=200]
 [m2]
-[lvse]
+[font_green]
 8
 @dazi
 月
@@ -176,7 +176,7 @@
 [wt]
 [wait time=200]
 [m2]
-[lvse]
+[font_green]
 @dazi
 同
 @dazi
@@ -218,7 +218,7 @@
 [wt]
 [wait time=200]
 [m2]
-[lvse]
+[font_green]
    
 @dazi
 同
@@ -266,7 +266,7 @@
 [wt]
 [wait time=200]
 [m2]
-[lvse]
+[font_green]
    
 @dazi
 同
@@ -304,3 +304,54 @@
 [layopt layer=message5 visible=false]
 [wait time=2000]
 @jump storage=first.ks target=*0036
+
+
+;;;;;;;;;;----------chapter3 shijian----------;;;;;;;;;;
+*Chap3_time_01
+[cl all]
+[position layer=message2 frame="time" visible="true" left=20 top=475 width=640 height=108 marginl=165 margint=15 page=back]
+[trans method=crossfade time=1000]
+[wt]
+[wait time=200]
+[m2]
+[font_green]
+   
+@dazi
+?
+@dazi
+月  
+@dazi
+？
+@dazi
+日   
+@dazi
+上午
+@dazi
+7
+@dazi
+时
+@dazi
+45
+@dazi
+分[r]
+       
+@dazi
+李
+@dazi
+云
+@dazi
+萧
+@dazi
+的
+@dazi
+寝
+@dazi
+室
+
+[p]
+[position layer=message2 page=fore frame="" opacity=0 left=20 top=480 width=640 height=108 marginl=25 margint=5]
+[layopt layer=message5 visible=false]
+[wait time=2000]
+@jump storage=first.ks target=*Chap3_0001
+
+

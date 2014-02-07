@@ -10,7 +10,7 @@
 [but1 b1=bt03 b2=bt04]
 [current layer=message2]
 [nowait]
-[chengse]
+[font_orange]
                ～逮捕的理由～[p]
 [endnowait]
 [playbgm storage="queslow3"]
@@ -31,7 +31,7 @@
 [button layer=1 normal=bt_r1 on=bt_r2 storage=xunwen.ks target=*0002 hint=下一句 clickse=queren]
 [m1 renming=章傲]
 [m2]
-[lvse]
+[font_green]
 其实，我们在尸体下面，[r]
 发现了一张写有被告人名字的纸。[p]
 
@@ -50,7 +50,7 @@
 [button layer=1 normal=bt_r1 on=bt_r2 storage=xunwen.ks target=*0003 hint=下一句 clickse=queren]
 [m1 renming=章傲]
 [m2]
-[lvse]
+[font_green]
 上面是被害人用血写下的血字。[p]
 
 *0003
@@ -68,7 +68,7 @@
 [button layer=1 normal=bt_r1 on=bt_r2 storage=xunwen.ks target=*0004 hint=下一句 clickse=queren]
 [m1 renming=章傲]
 [m2]
-[lvse]
+[font_green]
 经检查，被害人的手指上也有摩擦的痕迹。[p]
 
 *0004
@@ -86,7 +86,7 @@
 [button layer=1 normal=bt_r1 on=bt_r2 storage=first.ks target=*0008 hint=下一句 clickse=queren]
 [m1 renming=章傲]
 [m2]
-[lvse]
+[font_green]
 被害人死之前告发了凶手。[p]
 [cm]
 [jump storage=first.ks target=*0008]
@@ -103,7 +103,7 @@
 [but1 b1=bt03 b2=bt04]
 [current layer=message2]
 [nowait]
-[chengse]
+[font_orange]
                ～看到了什么 1～[p]
 [endnowait]
 [playbgm storage="queslow3"]
@@ -123,7 +123,7 @@
 [button layer=1 normal=bt_r1 on=bt_r2 storage=xunwen.ks target=*0006 hint=下一句 clickse=queren]
 [m1 renming=叶亭风]
 [m2]
-[lvse]
+[font_green]
 那天我去办公室找老师。[p]
 
 *0006
@@ -141,7 +141,7 @@
 [button layer=1 normal=bt_r1 on=bt_r2 storage=xunwen.ks target=*0007 hint=下一句 clickse=queren]
 [m1 renming=叶亭风]
 [m2]
-[lvse]
+[font_green]
 听到办公室里面有动静，[r]
 好像还有笔筒掉落的声音。[p]
 
@@ -160,7 +160,7 @@
 [button layer=1 normal=bt_r1 on=bt_r2 storage=xunwen.ks target=*0008 hint=下一句 clickse=queren]
 [m1 renming=叶亭风]
 [m2]
-[lvse]
+[font_green]
 然后我透过窗户看到了尸体，[r]
 还有慌慌张张的被告人。[p]
 
@@ -179,7 +179,7 @@
 [button layer=1 normal=bt_r1 on=bt_r2 storage=first.ks target=*0017 hint=下一句 clickse=queren]
 [m1 renming=叶亭风]
 [m2]
-[lvse]
+[font_green]
 那时我看到了被害人的手表，[r]
 时间正好是11点55分。[p]
 [cm]
@@ -197,7 +197,7 @@
 [but1 b1=bt03 b2=bt04]
 [current layer=message2]
 [nowait]
-[chengse]
+[font_orange]
                ～看到了什么 2～[p]
 [endnowait]
 [playbgm storage="quefast3"]
@@ -216,7 +216,7 @@
 [button layer=1 normal=bt_r1 on=bt_r2 storage=xunwen.ks target=*0010 hint=下一句 clickse=queren]
 [m1 renming=叶亭风]
 [m2]
-[lvse]
+[font_green]
 其实我并没有直接看到被害人的手表，[p]
 
 *0010
@@ -234,7 +234,7 @@
 [button layer=1 normal=bt_r1 on=bt_r2 storage=xunwen.ks target=*0011 hint=下一句 clickse=queren]
 [m1 renming=叶亭风]
 [m2]
-[lvse]
+[font_green]
 在办公室里不是有一块大镜子么，[r]
 我看到的其实是镜子中的样子。[p]
 
@@ -253,7 +253,7 @@
 [button layer=1 normal=bt_r1 on=bt_r2 storage=xunwen.ks target=*0012 hint=下一句 clickse=queren]
 [m1 renming=叶亭风]
 [m2]
-[lvse]
+[font_green]
 所以12点05分就变成11点55分了。[p]
 
 *0012
@@ -277,7 +277,7 @@
 [endif]
 [m1 renming=叶亭风]
 [m2]
-[lvse]
+[font_green]
 另外作为我的确目击的证据，[wait time=200]我还看到了别的东西。[p]
 [if exp="f.威慑==0"]
 [jump storage=first.ks target=*0024]
@@ -298,7 +298,7 @@
 [button layer=1 normal=bt_r1 on=bt_r2 storage=first.ks target=*0029 hint=下一句 clickse=queren]
 [m1 renming=叶亭风]
 [m2]
-[lvse]
+[font_green]
 卷子上写着名字，[wait time=200]分数也记得，[wait time=200]是86分。[p]
 [cm]
 [jump storage=first.ks target=*0029]
@@ -315,7 +315,7 @@
 [but1 b1=bt03 b2=bt04]
 [current layer=message2]
 [nowait]
-[chengse]
+[font_orange]
                ～怀疑的理由 1～[p]
 [endnowait]
 [playbgm storage="queslow3"]
@@ -334,7 +334,7 @@
 [button layer=1 normal=bt_r1 on=bt_r2 storage=xunwen.ks target=*0015 hint=下一句 clickse=queren]
 [m1 renming=梁警官]
 [m2]
-[lvse]
+[font_green]
 看，这个是被害人身下的白纸，[r]
 白纸背面用血写了个名字。[p]
 
@@ -353,7 +353,7 @@
 [button layer=1 normal=bt_r1 on=bt_r2 storage=xunwen.ks target=*0016 hint=下一句 clickse=queren]
 [m1 renming=梁警官]
 [m2]
-[lvse]
+[font_green]
 毫无疑问，这是死亡讯息，它告发了凶手。[p]
 
 *0016
@@ -371,7 +371,7 @@
 [button layer=1 normal=bt_r1 on=bt_r2 storage=xunwen.ks target=*0017 hint=下一句 clickse=queren]
 [m1 renming=梁警官]
 [m2]
-[lvse]
+[font_green]
 被害人死前用右手食指写下了凶手的名字。[p]
 
 *0017
@@ -389,7 +389,7 @@
 [button layer=1 normal=bt_r1 on=bt_r2 storage=first.ks target=*0041 hint=下一句 clickse=queren]
 [m1 renming=梁警官]
 [m2]
-[lvse]
+[font_green]
 难道说，这死亡讯息有什么问题么？[p]
 [cm]
 [jump storage=first.ks target=*0042]
@@ -406,7 +406,7 @@
 [but1 b1=bt03 b2=bt04]
 [current layer=message2]
 [nowait]
-[chengse]
+[font_orange]
                ～怀疑的理由 2～[p]
 [endnowait]
 [playbgm storage="quefast3"]
@@ -425,7 +425,7 @@
 [button layer=1 normal=bt_r1 on=bt_r2 target=*0019 hint=下一句 clickse=queren]
 [m1 renming=梁警官]
 [m2]
-[lvse]
+[font_green]
 在尸体旁边有一个掉落的笔筒，[r]
 笔筒上沾有被害人的血迹。[p]
 
@@ -444,7 +444,7 @@
 [button layer=1 normal=bt_r1 on=bt_r2 target=*0020 hint=下一句 clickse=queren]
 [m1 renming=梁警官]
 [m2]
-[lvse]
+[font_green]
 这个一定就是凶器了，[r]
 它的质量足以砸死一人。[p]
 
@@ -463,7 +463,7 @@
 [button layer=1 normal=bt_r1 on=bt_r2 target=*0021 hint=下一句 clickse=queren]
 [m1 renming=梁警官]
 [m2]
-[lvse]
+[font_green]
 笔筒上发现了奇怪的指纹，[r]
 经过确认是叶亭风的指纹。[p]
 
@@ -482,7 +482,7 @@
 [button layer=1 normal=bt_r1 on=bt_r2 storage=first.ks target=*0049 hint=下一句 clickse=queren]
 [m1 renming=梁警官]
 [m2]
-[lvse]
+[font_green]
 明显，是他拿起了笔筒砸向被害人，[r]
 就这样留下了右手的指纹。[p]
 [cm]
@@ -500,7 +500,7 @@
 [but1 b1=bt03 b2=bt04]
 [current layer=message2]
 [nowait]
-[chengse]
+[font_orange]
                ～发现尸体 1～[p]
 [endnowait]
 [playbgm storage="quefast3"]
@@ -519,7 +519,7 @@
 [button layer=1 normal=bt_r1 on=bt_r2 target=*0023 hint=下一句 clickse=queren]
 [m1 renming=叶亭风]
 [m2]
-[lvse]
+[font_green]
 今天我去办公室找老师，先从窗口向里面望了望。[p]
 
 *0023
@@ -537,7 +537,7 @@
 [button layer=1 normal=bt_r1 on=bt_r2 target=*0024 hint=下一句 clickse=queren]
 [m1 renming=叶亭风]
 [m2]
-[lvse]
+[font_green]
 发现老师安静地趴在桌子上，好像睡着了。[p]
 
 *0024
@@ -555,7 +555,7 @@
 [button layer=1 normal=bt_r1 on=bt_r2 target=*0025 hint=下一句 clickse=queren]
 [m1 renming=叶亭风]
 [m2]
-[lvse]
+[font_green]
 我敲了敲门，然后直接推门进去，[r]
 但是老师并没有起来看我。[p]
 
@@ -574,7 +574,7 @@
 [button layer=1 normal=bt_r1 on=bt_r2 target=*0026 hint=下一句 clickse=queren]
 [m1 renming=叶亭风]
 [m2]
-[lvse]
+[font_green]
 我走近老师身边，发现老师的头上都是血，[r]
 我顿时吓得不轻，直接愣在了那里。[p]
 
@@ -593,7 +593,7 @@
 [button layer=1 normal=bt_r1 on=bt_r2 target=*0027 hint=下一句 clickse=queren]
 [m1 renming=叶亭风]
 [m2]
-[lvse]
+[font_green]
 回过神，什么也没有做直接出来了。[p]
 
 *0027
@@ -611,7 +611,7 @@
 [button layer=1 normal=bt_r1 on=bt_r2 target=*0028 hint=下一句 clickse=queren]
 [m1 renming=叶亭风]
 [m2]
-[lvse]
+[font_green]
 突然进来了一个女生，[r]
 她看到这一幕，吓得尖叫起来。[p]
 
@@ -630,5 +630,5 @@
 [button layer=1 normal=bt_r1 on=bt_r2 target=*0019 hint=下一句 clickse=queren]
 [m1 renming=叶亭风]
 [m2]
-[lvse]
+[font_green]
 这尖叫声把你们也吸引过来了。[p]
