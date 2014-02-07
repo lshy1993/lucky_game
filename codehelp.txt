@@ -59,4 +59,4 @@ macro：名称                内容
        xuetiaobiao         显示将要扣的血量
 
 添加新的内容
-asdadsa
+asdadsa xxxx
