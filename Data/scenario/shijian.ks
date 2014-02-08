@@ -1,3 +1,4 @@
+;;;;;;;;;;----------chapter1 shijian----------;;;;;;;;;;
 *0001
 [cl layer=1]
 [cm]
@@ -111,7 +112,10 @@
 [bg storage=bgi05 time=600]
 [wt]
 @jump storage=first.ks target=*0002
+;;;;;;;;;;----------end of chapter 1----------;;;;;;;;;;
 
+
+;;;;;;;;;;----------chapter2 shijian----------;;;;;;;;;;
 *0003
 [cl layer=1]
 [cm]
@@ -186,11 +190,9 @@
 @dazi
 午   
 @dazi
-0
-@dazi
 9
 @dazi
-点
+时
 @dazi
 5
 @dazi
@@ -233,7 +235,7 @@
 @dazi
 0
 @dazi
-点
+时
 @dazi
 0
 @dazi
@@ -279,7 +281,7 @@
 @dazi
 1
 @dazi
-点
+时
 @dazi
 1
 @dazi
@@ -304,7 +306,7 @@
 [layopt layer=message5 visible=false]
 [wait time=2000]
 @jump storage=first.ks target=*0036
-
+;;;;;;;;;;----------end of chapter 2----------;;;;;;;;;;
 
 ;;;;;;;;;;----------chapter3 shijian----------;;;;;;;;;;
 *Chap3_time_01
@@ -317,24 +319,30 @@
 [font_green]
 
 @dazi
-?
+5
 @dazi
-月  
+月
 @dazi
-？
+2
+@dazi
+2
 @dazi
 日   
 @dazi
-上午
+上
+@dazi
+午   
 @dazi
 7
 @dazi
 时
 @dazi
-45
+4
+@dazi
+5
 @dazi
 分[r]
-       
+      
 @dazi
 李
 @dazi
@@ -369,11 +377,13 @@
 @dazi
 上
 @dazi
-午
+午   
 @dazi
 8
 @dazi
-点[r]
+时
+@dazi
+整[r]   
 @dazi
 一
 @dazi
@@ -383,14 +393,12 @@
 @dazi
 学
 @dazi
-楼 
+楼
 @dazi
-一
+1
 @dazi
 楼
-
 [p]
-
 [position layer=message2 page=fore frame="" opacity=0 left=20 top=480 width=640 height=108 marginl=25 margint=5]
 [layopt layer=message5 visible=false]
 [wait time=2000]
@@ -411,15 +419,17 @@
 @dazi
 上
 @dazi
-午
+午   
 @dazi
 8
 @dazi
 时
 @dazi
-20
+2
 @dazi
-分
+0
+@dazi
+分[r]    
 @dazi
 一
 @dazi
@@ -434,8 +444,7 @@
 4
 @dazi
 楼
-
-
+[p]
 [position layer=message2 page=fore frame="" opacity=0 left=20 top=480 width=640 height=108 marginl=25 margint=5]
 [layopt layer=message5 visible=false]
 [wait time=2000]
