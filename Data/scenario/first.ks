@@ -16,7 +16,7 @@
 ;; Status: 
 ;; Table of Contents: 
 ;; 
-;;     Update #: 27
+;;     Update #: 33
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;
 ;;Code:
@@ -3533,19 +3533,50 @@ m1 renming=李云萧]
 [displayInfor renming=苗星刃]今天是社团文化节啊，各个社团都在忙活展出呢。[p]
 [displayInfor renming=李云萧]啊啊啊……[wait time=200ms]为什么那么好的时间不让我睡觉呢，真是的。[p]
 算了算了，我还是起来吧。[p]
-这个人是我的室友，虽然看起来是一个人畜无害的家伙……[p]
+[font_blue]
+(这个人是我的室友，虽然看起来是一个人畜无害的家伙……[p]
+[font_blue]
 但是切开来的话里面是什么样子谁知道……╮(￣▽￣")╭ [p]
+[font_blue]
 master未知，职阶姑且算是弓兵，[p]
+[font_blue]
 保有技能：理科能力B，作死C，吐槽B，[p]
+[font_blue]
 睡午觉技能倒是很意外的A+。[p]
+[font_blue]
 嘛，[wait time=200ms]当然论推理能力也是相当之人。[p]
-因为名字实在太麻烦所以以后就叫喵好了。[p]
+[font_blue]
+因为名字实在太麻烦所以以后就叫喵好了。)[p]
+[jump storage=shijian.ks target=*Chap3_time_02]
 
-;[s]
-
-
-
-
+*Chap3_0002
+[displayInfor renming=李云萧]
+[font_blue]
+(我们学校每年的这个时间附近，由学生会组织，[p]
+[font_blue]
+各个学生社团联合举行社团文化节。[p]
+[font_blue]
+而且每年会持续几天，感觉有点像11区的文化祭。[p]
+[font_blue]
+但怎么说呢，总感觉这里的比起11区的差远了。)[p]
+[cm]
+[displayInfor renming=喵星人]
+话说去哪个教室看看好呢？[p]
+[displayInfor renming=李云萧]
+我随意啊，现在还早，来的学生不多。[p]
+你说去哪个社团看看比较好？[p]
+[displayInfor renming=喵星人]
+那么就去文艺点的书法社怎么样啊？[p]
+恩，对于我们来说文艺这东西总是缺少的。[p]
+就这么愉快地决定了！撒，一狗！[p]
+[displayInfor renming=李云萧]
+喂喂，[wait time=200]我还没说呢，不要就这样擅自决定啊。[p]
+[cm]
+[displayInfor renming=李云萧]
+[font_blue]
+(说起来，你刚才就一直在姓名栏卖什么萌啊)[p]
+[jump storage=shijian.ks target=*Chap3_time_03]
+[s]
 
 ;;;;;;;;;;----------end of Chapter 3----------;;;;;;;;;;
 
