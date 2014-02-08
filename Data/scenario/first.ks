@@ -2960,7 +2960,7 @@
 [displayInfor renming=李云萧]啊啊啊……[wait time=200ms]为什么那么好的时间不让我睡觉呢，真是的。[p]
 算了算了，我还是起来吧。[p]
 [font_blue]
-(这个人是我的室友，[r]
+（这个人是我的室友，[r]
 虽然看起来是一个人畜无害的家伙……[p]
 [font_blue]
 但是切开来的话里面是什么样子谁知道……[r]╮(￣▽￣")╭ [p]
@@ -2973,7 +2973,7 @@ master未知，职阶姑且算是弓兵，[p]
 [font_blue]
 嘛，[wait time=200ms]当然论推理能力也是相当之人。[p]
 [font_blue]
-因为名字实在太渣渣所以以后就叫喵星人好了。)[p]
+因为名字实在太渣渣所以以后就叫喵星人好了。）[p]
 [jump storage=shijian.ks target=*Chap3_time_02]
 
 *Chap3_0002
