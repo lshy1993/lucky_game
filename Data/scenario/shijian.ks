@@ -440,4 +440,34 @@
 [layopt layer=message5 visible=false]
 [wait time=2000]
 @jump storage=first.ks target=*Chap3_0003
+
+*Chap3_time_04
+[cl all]
+[position layer=message2 frame="time" visible="true" left=20 top=475 width=640 height=108 marginl=165 margint=15 page=back]
+[trans method=crossfade time=1000]
+[wt]
+[wait time=200]
+[m2]
+[font_green]
+@dazi
+同
+@dazi
+日   
+@dazi
+上
+@dazi
+午
+@dazi
+8
+@dazi
+时
+@dazi
+30
+@dazi
+分
+[position layer=message2 page=fore frame="" opacity=0 left=20 top=480 width=640 height=108 marginl=25 margint=5]
+[layopt layer=message5 visible=false]
+[wait time=2000]
+@jump storage=first.ks target=*Chap3_0004
+
 ;;;;;;;;;;----------end of chapter 3----------;;;;;;;;;;

@@ -16,7 +16,7 @@
 ;; Status: 
 ;; Table of Contents: 
 ;; 
-;;     Update #: 37
+;;     Update #: 39
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;
 ;;Code:
@@ -3623,6 +3623,36 @@ master未知，职阶姑且算是弓兵，[p]
 [displayInfor renming=李云萧]嗯，具体情况还是去问问吧。[p]
 那么社长人呢？[p]
 [displayInfor renming=西门吹]在教室里面。[p]
+[jump storage=shijian.ks target=*Chap3_time_04]
+
+*Chap3_0004
+[displayInfor renming=李云萧][font_blue]（哇，美女……）[p]
+[displayInfor renming=张华彦]等一下，你是来干正事的。[p]
+不要带有个人情感。[p]
+[displayInfor renming=李云萧]谁会啊？[p]
+[displayInfor renming=社长]请问你们是？[p]
+[displayInfor renming=西门吹]他就是我说的头脑特别好的——[p]
+[displayInfor renming=社长]李云萧同学？[p]
+[displayInfor renming=李云萧]是的，你好。[p]
+这位是我的室友……[p]
+[displayInfor renming=喵星人]我叫苗星刃，你好。[p]
+[displayInfor renming=社长]想必你也已经听西门吹说过一些了吧。[p]
+[displayInfor renming=李云萧]是的，书法社好像丢失了一副作品。[p]
+[displayInfor renming=社长]那么我想请你帮我找到那副丢失的作品。[p]
+报酬的话，你想要什么只要我能拿得出来都行。[p]
+[displayInfor renming=李云萧]啊，不用了，报酬什么的……[p]
+[displayInfor renming=腹黑喵]是啊，他怎么会要这种东西呢？[p]
+云萧桑解决事情都是免费的，不仅免费，解决不了还会倒贴哟~[p]
+[displayInfor renming=社长]是吗，那么太好了。[p]
+[displayInfor renming=李云萧]喂喂，我又说不收报酬了吗？[p]
+[displayInfor renming=腹黑喵]什么？你居然还想着要报酬？[p]
+李云萧，我看错你了……[p]
+[displayInfor renming=李云萧]所以说……[p]
+[displayInfor renming=腹黑喵]啧啧……堂堂的大侦探居然在意这点小钱真是……[p]
+[displayInfor renming=西门吹]咳咳……社长，赶紧说说发生什么事情了吧。[p]
+[displayInfor renming=李云萧]那么就由我来提问吧。[p]
+[displayInfor renming=社长]嗯，没问题。[p]
+
 
 ;;;;;;;;;;----------end of Chapter 3----------;;;;;;;;;;
 
