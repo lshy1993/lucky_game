@@ -29,6 +29,6 @@ height=223
 col0width=140
 col1width=400
 stayontop=0
-exprlist=f.证据数目@-@*f.人物数目@-@*f.证据@-@*f.证词@-@*f.威慑@-@*f.证词编号@-@*
+exprlist=f.证据数目@-@*f.人物数目@-@*f.证据@-@*f.证词@-@*f.威慑@-@*f.证词编号@-@*f.dictEvidence@-@*f.openAdd1ForChap3DiaoCha01@-@*f.openAdd2ForChap3DiaoCha01@-@*
 interval=1000
 

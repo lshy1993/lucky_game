@@ -353,6 +353,10 @@
 [font color=0x000000 shadow=false]
 @endmacro
 
+@macro name=font_white
+[font color=0xFFFFFF shadow=false]
+@endmacro
+
 @macro name=xuetiao
 [image layer=2 storage=bar1 page=fore visible=true left=500 top=20]
 [if exp="f.hpBar==1"]
