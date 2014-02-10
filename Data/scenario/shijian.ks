@@ -465,15 +465,30 @@
 @dazi
 上
 @dazi
-午
+午   
 @dazi
 8
 @dazi
 时
 @dazi
-30
+3
 @dazi
-分
+0
+@dazi
+分[r]    
+@dazi
+社
+@dazi
+团
+@dazi
+活
+@dazi
+动
+@dazi
+教
+@dazi
+室
+[p]
 [position layer=message2 page=fore frame="" opacity=0 left=20 top=480 width=640 height=108 marginl=25 margint=5]
 [layopt layer=message5 visible=false]
 [wait time=2000]
@@ -494,15 +509,17 @@
 @dazi
 上
 @dazi
-午
+午   
 @dazi
 8
 @dazi
 时
 @dazi
-45
+4
 @dazi
-分[r]
+5
+@dazi
+分[r]    
 @dazi
 一
 @dazi
