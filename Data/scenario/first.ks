@@ -16,7 +16,7 @@
 ;; Status: 
 ;; Table of Contents: 
 ;; 
-;;     Update #: 48
+;;     Update #: 54
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;
 ;;Code:
@@ -40,6 +40,7 @@
 
 *title
 [cm]
+[clearvar]
 [nowait]
 [stopbgm]
 [current layer=message0 page=fore withback=ture]
@@ -3128,6 +3129,8 @@ master未知，职阶姑且算是弓兵，[p]
 总而言之，先去听听其他人的证词吧。[p]
 ;[cm]
 ;[jump target=*title]
+
+
 
 ;;;;;;;;;;----------end of Chapter 3----------;;;;;;;;;;
 
