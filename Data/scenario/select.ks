@@ -61,7 +61,7 @@
 [wait time=600]
 [bg storage=js]
 [backlay]
-[image layer=1 storage=gya2 page=back visible=true]
+[image layer=1 storage=gya3 page=back visible=true]
 @if exp="f.style==1"
 [trans method=scroll from=left stay=nostay time=250]
 @elsif exp="f.style==0"
@@ -83,7 +83,7 @@
 [wait time=600]
 [bg storage=bg0]
 [backlay]
-[image layer=1 storage=gya2 page=back visible=true]
+[image layer=1 storage=gya4 page=back visible=true]
 @if exp="f.style==1"
 [trans method=scroll from=left stay=nostay time=250]
 @elsif exp="f.style==0"
@@ -105,7 +105,7 @@
 [wait time=600]
 [bg storage=zl]
 [backlay]
-[image layer=1 storage=gya2 page=back visible=true]
+[image layer=1 storage=gya5 page=back visible=true]
 @if exp="f.style==1"
 [trans method=scroll from=left stay=nostay time=250]
 @elsif exp="f.style==0"
