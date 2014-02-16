@@ -5,8 +5,8 @@ stayontop=0
 
 [console]
 autoshowonerror=0
-left=50
-top=71
+left=846
+top=32
 width=515
 height=389
 exprhist=
@@ -14,7 +14,7 @@ stayontop=0
 font=pEpPpPpPaAaAaAaAaAaAaAaAaAaAaAaAjAaBaAaAaAaAaAiGaAaAaAaAmLmOmMoFaAaAaAaAaAaAaAaAaAaAaAaAaAaAaAaAaAaAaAaAaAaAaAaAaAaAaAaA
 
 [script editor]
-left=392
+left=412
 top=339
 width=538
 height=352
