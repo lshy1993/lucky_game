@@ -265,6 +265,7 @@
 *Chap3_diaocha01_begin
 @layopt layer=message1  visible=false
 @layopt layer=message2  visible=false
+[eval exp="f.dictEvidence.特殊金库 = %[]; f.dictEvidence.密码的情况 = %[];  f.dictEvidence.发现者的顺序 = %[]"]
 [cm]
 [m4]
 [locate x=20 y=0]
@@ -289,7 +290,7 @@
 @layopt layer=message1  visible=false
 @layopt layer=message2  visible=false
 
-[if exp="f.dictEvidence['特殊金库'] && f.dictEvidence['密码的情况'] && f.dictEvidence['发现者的顺序']"]
+[if exp="f.dictEvidence.特殊金库.flag && f.dictEvidence.密码的情况.flag && f.dictEvidence.发现者的顺序.flag"]
 [cm]
 [cl layer=1]
 [fadeoutbgm time=200]
@@ -335,10 +336,12 @@
 [locate x=355 y=230]
 关于事件
 [if exp="f.openAdd1ForChap3DiaoCha01 == true"]
+;[if exp="f.dictEvidence.特殊金库.flag == true"]
 [locate x=355 y=310]
 特殊金库
 [endif]
 [if exp="f.openAdd2ForChap3DiaoCha01 == true"]
+;[if exp="f.dictEvidence.密码的情况.flag == true"]
 [locate x=345 y=390]
 书法不见了
 [endif]
@@ -472,7 +475,7 @@
 ……连动都不动……[p]
 [new]
 ;*证据:特殊金库（学校专门为社团制作的课桌，外表很旧，但是内部却是坚实的小型金库。一个人很难将其搬动，似乎非常重。）
-[eval exp="f.dictEvidence['特殊金库'] = true"]
+[eval exp="f.dictEvidence.特殊金库.flag = true"]
 [displayInfor renming=社长]我想是内部的合金材料非常的重。[p]
 当初为了把这个课桌移到一边，我叫了几个人才勉强移动的。[p]
 [displayInfor renming=李云萧][font_blue]（的确这么重的课桌一个人想要移动是不大可能的）[p]
@@ -491,7 +494,7 @@
 因为这是不可能的事情，密码和钥匙都在我身上。[p]
 [new]
 ;*证据:密码的情况（只有社长和副社长知道的密码，而且钥匙只有社长本人持有。）
-[eval exp="f.dictEvidence['密码的情况'] = true"]
+[eval exp="f.dictEvidence.密码的情况.flag = true"]
 到底是怎么打开课桌拿走书法的呢？[p]
 [displayInfor renming=李云萧]只要弄清楚这一点，事件就可以解开了。[p]
 但是究竟如何才能做到呢？[p]
@@ -556,7 +559,7 @@
 [displayInfor renming=李云萧]这两人是又是谁先进入的呢？[p]
 [displayInfor renming=陆白]这个我不是很清楚，你可以亲自去问问俩人。[p]
 ;*证据:发现者的顺序（案发当日首先是陆白进入，然后陆白去找社长时，韩文轩和慕似雪进入了现场，最后社长和陆白返回现场）
-[eval exp="f.dictEvidence['发现者的顺序'] = true"]
+[eval exp="f.dictEvidence.发现者的顺序.flag = true"]
 [displayInfor renming=李云萧]东西丢失这件事有没有告诉老师？[p]
 [displayInfor renming=陆白]没有，知道这件事的只有我们和你们了。[p]
 我也在考虑要不要赶紧向上汇报这件事情。[p]
@@ -583,7 +586,129 @@
 ;*返回对话
 
 
+; *开启调查模式[p]
+; 功能按钮：调查-4l走廊 对话-无 移动-教室,5l[p]
+; 社团教室（陆白）[p]
+; 4l走廊（初始）（追加：慕似雪）[p]
+; 5l走廊（追加：韩文轩）[p]
 
+*Chap3_diaocha02_4楼走廊
+@layopt layer=message1  visible=false
+@layopt layer=message2  visible=false
+[cm]
+[m4]
+[locate x=20 y=0]
+[button layer=1 normal=diaocha1 on=diaocha2 hint=调查 target=*Chap3_diaocha02_4楼走廊_search clickse=queren]
+[locate x=120 y=0]
+[button layer=1 normal=duihua1 on=duihua2 hint=对话 target=*Chap3_diaocha02_4楼走廊_talk clickse=queren]
+[locate x=220 y=0]
+[button layer=1 normal=yidong1 on=yidong2 hint=移动 target=*Chap3_diaocha02_4楼走廊_move clickse=queren]
+[s]
+
+
+*Chap3_diaocha02_4楼走廊_talk
+[cm]
+[but1 b1=bt03 b2=bt04]
+[displayInfor renming=李云萧]
+阿卡林！[r]
+啊……也不在啊[p]
+[jump target=*Chap3_diaocha02_4楼走廊]
+
+*Chap3_diaocha02_4楼走廊_search
+[cm]
+[but1 b1=bt03 b2=bt04]
+[displayInfor renming=李云萧]
+嘟嘟噜~~~[r]
+由于世界线的变动还没有回复正常，这里被作者忽略了~[p]
+[jump target=*Chap3_diaocha02_4楼走廊]
+
+*Chap3_diaocha02_4楼走廊_move
+@layopt layer=message1  visible=false
+@layopt layer=message2  visible=false
+
+[cm]
+[m4]
+[locate x=700 y=0]
+[button layer=1 normal=close1 on=close2 hint=返回 storage=diaocha.ks target=*Chap3_diaocha02_4楼走廊 clickse=quxiao]
+
+[m3]
+[locate x=260 y=140]
+[button layer=1 normal=diaochadian1 on=diaochadian2 target=*Chap3_diaocha02_5楼走廊 clickse=queren]
+[locate x=260 y=220]
+[button layer=1 normal=diaochadian1 on=diaochadian2 target=*Chap03_diaocha02_社团教室 clickse=queren]
+[current layer=message4]
+[font_black]
+[nowait]
+[locate x=360 y=150]
+5楼走廊
+[locate x=360 y=230]
+社团教室
+[endnowait]
+[s]
+
+
+*Chap03_diaocha02_社团教室_fst
+; *首次进入时地点与对话
+
+[displayInfor renming=西门吹]啊！陆白还留在教室里。[p]
+[displayInfor renming=李云萧]嗯，去找他询问下情况吧。[p]
+顺带这里还有要调查的地方。[p]
+[eval exp="f.进入过教室 = true"]
+[jump target=*Chap03_diaocha02_社团教室]
+; *首次对话结束[p]
+
+*Chap03_diaocha02_社团教室
+;[if exp="f.进入过教室 != true"]
+;[jump target=*Chap03_diaocha02_社团教室_fst]
+[jump storage=shijian.ks target=*Chap3_time_社团教室 cond="!f.进入过教室"]
+;[endif]
+@layopt layer=message1  visible=false
+@layopt layer=message2  visible=false
+[cm]
+[m4]
+[locate x=20 y=0]
+[button layer=1 normal=diaocha1 on=diaocha2 hint=调查 target=*Chap3_diaocha02_社团教室_search clickse=queren]
+[locate x=120 y=0]
+[button layer=1 normal=duihua1 on=duihua2 hint=对话 target=*Chap3_diaocha02_社团教室_talk clickse=queren]
+[locate x=220 y=0]
+[button layer=1 normal=yidong1 on=yidong2 hint=移动 target=*Chap3_diaocha02_社团教室_move clickse=queren]
+[s]
+
+; 功能按钮：调查-教室 对话-陆白 移动-4l,5l[p]
+
+; *对话部分[p]
+; 今早之事[p]
+; 现场情况[p]
+; 其他部员[p]
+; 是谁干的[p]
+
+*Chap3_diaocha02_社团教室_search
+[cm]
+[but1 b1=bt03 b2=bt04]
+[displayInfor renming=李云萧]
+嘟嘟噜~~~[r]
+由于世界线的变动还没有回复正常，这里被作者忽略了~[p]
+[jump target=*Chap03_diaocha02_社团教室]
+
+*Chap3_diaocha02_社团教室_move
+@layopt layer=message1  visible=false
+@layopt layer=message2  visible=false
+
+[cm]
+[m4]
+[locate x=700 y=0]
+[button layer=1 normal=close1 on=close2 hint=返回 storage=diaocha.ks target=*Chap03_diaocha02_社团教室 clickse=quxiao]
+
+[m3]
+[locate x=260 y=140]
+[button layer=1 normal=diaochadian1 on=diaochadian2 target=*Chap3_diaocha02_4楼走廊 clickse=queren]
+[current layer=message4]
+[font_black]
+[nowait]
+[locate x=360 y=150]
+4楼走廊
+[endnowait]
+[s]
 
 
 

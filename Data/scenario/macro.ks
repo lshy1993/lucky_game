@@ -36,6 +36,18 @@
 @wait time=50
 @endmacro
 
+@macro name=typingstart
+;This macro is used to display the se of typing
+[se buf="1" storage="04.wav" loop=true]
+[delay speed=175]
+@endmacro
+
+
+@macro name=typingend
+[stopse buf="1"]
+[delay speed=user]
+@endmacro
+
 @macro name=m4
 [layopt layer=message4 page=fore visible=true]
 [current layer=message4 page=fore withback=ture]

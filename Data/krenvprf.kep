@@ -14,21 +14,21 @@ stayontop=0
 font=pEpPpPpPaAaAaAaAaAaAaAaAaAaAaAaAjAaBaAaAaAaAaAiGaAaAaAaAmLmOmMoFaAaAaAaAaAaAaAaAaAaAaAaAaAaAaAaAaAaAaAaAaAaAaAaAaAaAaAaA
 
 [script editor]
-left=412
-top=339
+left=653
+top=330
 width=538
 height=352
 content=[new]@-@*
 stayontop=0
 
 [watch]
-left=124
-top=484
+left=1012
+top=275
 width=299
 height=223
 col0width=140
 col1width=400
 stayontop=0
-exprlist=f.证据数目@-@*f.人物数目@-@*f.证据@-@*f.证词@-@*f.威慑@-@*f.证词编号@-@*f.dictEvidence@-@*f.openAdd1ForChap3DiaoCha01@-@*f.openAdd2ForChap3DiaoCha01@-@*
+exprlist=f.证据数目@-@*f.人物数目@-@*f.证据@-@*f.证词@-@*f.威慑@-@*f.证词编号@-@*f.dictEvidence@-@*f.openAdd1ForChap3DiaoCha01@-@*f.openAdd2ForChap3DiaoCha01@-@*f.进入过教室@-@*
 interval=1000
 
