@@ -16,7 +16,7 @@
 ;; Status: 
 ;; Table of Contents: 
 ;; 
-;;     Update #: 61
+;;     Update #: 62
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;
 ;;Code:
@@ -1160,7 +1160,7 @@
 [zuoyi1]
 [but1 b1=bt03 b2=bt04]
 [displayInfor renming=李云萧]
-你怎么不早说？[p]
+怎么不早说？[p]
 [ft3]
 [displayInfor renming=叶亭风]
 看到尸体对我造成很大的心灵上的冲击，[wait time=200]所以我给忘记了。[p]
