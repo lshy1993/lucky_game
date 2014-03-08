@@ -1,4 +1,3 @@
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; -*- Mode: Text -*- ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;first.ks --- 
 ;; Filename: first.ks
 ;; Description: 
@@ -16,7 +15,7 @@
 ;; Status: 
 ;; Table of Contents: 
 ;; 
-;;     Update #: 62
+;;     Update #: 79
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;
 ;;Code:
@@ -30,7 +29,8 @@
 [startanchor]
 [cm]
 [rclick enabled=false]
-;[clickskip enabled=true]
+
+
 [history output=false enabled=false]
 [position layer=message3 page=fore frame="" opacity=0 left=0 top=0 width=800 height=600 marginl=0 margint=0]
 [position layer=message4 page=fore frame="" opacity=0 left=0 top=0 width=800 height=600 marginl=0 margint=0]
@@ -54,6 +54,7 @@
 [locate x=310 y=420]
 [link target=*titleload hint=从中断的地方继续]继续侦查[endlink][r]
 ;[link target=*0007 hint=从中断的地方继续]继续侦查[endlink][r]
+
 [locate x=310 y=480]
 [link target=*titleexit hint=退出游戏]结束侦查[endlink]
 [font size=default face=default color=default edge=false]
@@ -100,6 +101,7 @@
 [eval exp="f.威慑=0"]
 [eval exp="f.case=1"]
 [but1 b1=bt03 b2=bt04]
+[rclick call=true storage="rclick.ks" target="*rclick" enabled=true]
 [displayInfor renming=李云萧]
 ……嗯……[wait time=400][r]……嗯……[p]
 ……嗯……[wait time=400][r]……好累……[p]
@@ -411,6 +413,10 @@
 [layopt layer=message4 visible=false]
 [bg storage=black time=400]
 [bg storage=ft3 time=600]
+
+
+[rclick call=false enabled=false]
+
 
 *z001
 [eval exp="f.证词编号=1"]
@@ -3407,13 +3413,25 @@
 [eval exp="f.hpBar = 5"]
 [eval exp="f.matta = %[]"]
 ;;matta is japanese pronounciation, which means threating people 
+
+
+
+[rclick call=true storage="rclick.ks" target="*rclick" enabled=true]
+; rclick menu
+
+
 [displayInfor renming=苗星刃]
 啊，今天可是难得的放假不上课的日子啊，[r][wait time=200ms]你怎么还窝在寝室。[p]
+
+; [rclick call=true storage="rclick.ks" target="*rclick" enabled=true]
+
 [displayInfor renming=李云萧]不行吗？没有人规定我一定要出去啊。[p]
-[cm]
+
 [displayInfor renming=苗星刃]今天是社团文化节啊，各个社团都在忙活展出呢。[p]
+
 [displayInfor renming=李云萧]啊啊啊……[wait time=200ms]为什么那么好的时间不让我睡觉呢，真是的。[p]
 算了算了，我还是起来吧。[p]
+
 [font_blue]
 （这个人是我的室友，[r]
 虽然看起来是一个人畜无害的家伙……[p]

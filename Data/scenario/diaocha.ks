@@ -331,12 +331,13 @@
 [current layer=message4]
 [font_black]
 [nowait]
+
 [locate x=345 y=150]
 关于书法社
 [locate x=355 y=230]
 关于事件
 [if exp="f.openAdd1ForChap3DiaoCha01 == true"]
-;[if exp="f.dictEvidence.特殊金库.flag == true"]
+
 [locate x=355 y=310]
 特殊金库
 [endif]

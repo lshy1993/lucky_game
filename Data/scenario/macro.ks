@@ -461,4 +461,20 @@
 [but1 b1=bt03 b2=bt04]
 @endmacro
 
+@macro name=savepic
+[current page=back layer=message5][er][nowait][font face="Î¢ÈíÑÅºÚ" size=18 color=0xffffff]
+
+[button normal=&(kag.getBookMarkFileNameAtNum(%bookMarkName)) cond="kag.bookMarkDates[%bookMarkName]!=void"]
+[button normal="nodata" cond="kag.bookMarkDates[%bookMarkName] == void"]
+[link]
+
+
+@endmacro
+
+
+@macro name=loadpic
+
+
+@endmacro
+
 @return
