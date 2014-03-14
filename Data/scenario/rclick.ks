@@ -16,7 +16,7 @@
 ;; Status: 
 ;; Table of Contents: 
 ;; 
-;;     Update #: 71
+;;     Update #: 78
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 ; Code:
@@ -65,8 +65,10 @@
 [locate x=345 y=305]
 历史记录
 [locate x=345 y=385]
-返回标题
+系统设置
 [locate x=345 y=465]
+返回标题
+[locate x=345 y=545]
 退出游戏
 
 [endnowait]
@@ -83,6 +85,7 @@
 [layopt layer=message5 page=fore visible=false]
 [layopt layer=message6 page=fore visible=false]
 [current layer=message2]
+[history output=true enabled=true]
 [rclick call=true storage="rclick.ks" target="*rclick" enabled=true]
 [return]
 
@@ -240,10 +243,19 @@
 *system
 [rclick call=false enabled=false]
 
+
+
+[s]
+
+
 *history
 [rclick call=false enabled=false]
-
-
+[showhistory]
+; [locate x=345 y=465]
+; [nowait]
+; [link target=*rclick]返回菜单[endlink]
+; [endnowait]
+[jump target=*rclick]
 
 *backtitle
 [rclick call=false enabled=false]

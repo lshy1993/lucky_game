@@ -4,7 +4,7 @@
 ;; Author: Li Shengyun / Zhang Huayan 
 ;; E-mail: zy11043@nottingham.edu.cn / MeowAlienOwO@gmail.com
 ;; Created: 周三 二月  5 11:02:53 2014 (+0800)
-;; Version: 
+;; Version:  
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 ;;Commentary: 
@@ -15,9 +15,9 @@
 ;; Status: 
 ;; Table of Contents: 
 ;; 
-;;     Update #: 79
+;;     Update #: 84
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;;
+;;x
 ;;Code:
 
 
@@ -101,6 +101,7 @@
 [eval exp="f.威慑=0"]
 [eval exp="f.case=1"]
 [but1 b1=bt03 b2=bt04]
+[history output=true enabled=true]
 [rclick call=true storage="rclick.ks" target="*rclick" enabled=true]
 [displayInfor renming=李云萧]
 ……嗯……[wait time=400][r]……嗯……[p]
