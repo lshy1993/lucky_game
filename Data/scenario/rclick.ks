@@ -261,11 +261,11 @@
 [locate x=50 y=0]
 背景音音量
 [locate x=0 y=100]
-[slider value="kag.bgmvolume" base="setting_sound" width=20 height=20 normal="setting_buttonUncrushedPng"]
+[slider value="kag.bgmvolume" base="track" width=0 height=0 normal="handle"]
 [locate x=50 y=200]
 音效音量
 [locate x=0 y=300]
-[slider value="kag.sevolume" base="setting_sound" width=20 height=20 normal="setting_buttonUncrushedPng"]
+[slider value="kag.sevolume" base="track" width=0 height=0 normal="handle"]
 ; [link target="*bgVolumeDown"]音量减小[endlink]
 [locate x=400 y=0]
 文字显示速度

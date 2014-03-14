@@ -3889,13 +3889,23 @@
 ！[p]
 这，这是……[p]
 [s]
-第二章上结束
+;;;;;;;;;;----------Chapter 2 Suspended----------;;;;;;;;;;
 
+;;;;;;;;;;----------Chapter 2 Continue----------;;;;;;;;;;
+*0079
+[position layer=message1 page=back frame="message" visible=true opacity=150 left=20 top=435 width=160 height=40 marginl=10 margint=2]
+[trans method=crossfade time=1000]
+[wt]
+[position layer=message2 page=fore frame="" opacity=0 left=20 top=480 width=640 height=108 marginl=25 margint=5]
+[rclick call=true storage="rclick.ks" target="*rclick" enabled=true]
+[eval exp="f.hpBar=5"]
+[eval exp="f.威慑=0"]
+[eval exp="f.case=2"]
+[but1 b1=bt03 b2=bt04]
+[displayInfor renming=李云萧]
 [displayInfor renming=陈雨涵]
 我说的是假的？！[p]
 这绝对不可能，我证明给你们看！！[p]
-
-
 我看到的是真的，没有半点虚假！[p]
 [displayInfor renming=梁警官]
 这位同学，很感谢你提供线索，[r]
