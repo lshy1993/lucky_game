@@ -16,7 +16,7 @@
 ;; Status: 
 ;; Table of Contents: 
 ;; 
-;;     Update #: 78
+;;     Update #: 101
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 ; Code:
@@ -163,8 +163,8 @@
 [jump target=*rclick]
 
 
-*save
-[rclick call=false enabled=false]
+; *save
+; [rclick call=false enabled=false]
 *save
 [rclick call=false enabled=false]
 
@@ -242,10 +242,73 @@
 
 *system
 [rclick call=false enabled=false]
+[position layer=message5 page=fore frame="" left=0 top=0 width=800 height=600 marginl=0 margint=0]
+[current layer=message5]
+[er]
+[current layer=message6]
+[er]
+[current layer=message5]
 
+[nowait]
+[locate x=245 y=150]
 
+; [current layer=5]
+; [er]
+; [current layer=6]
+; [er]
+; [current layer=5]
+; [link target=*bgVolumeUp]音量增大[endlink]
+[locate x=50 y=0]
+背景音音量
+[locate x=0 y=100]
+[slider value="kag.bgmvolume" base="setting_sound" width=20 height=20 normal="setting_buttonUncrushedPng"]
+[locate x=50 y=200]
+音效音量
+[locate x=0 y=300]
+[slider value="kag.sevolume" base="setting_sound" width=20 height=20 normal="setting_buttonUncrushedPng"]
+; [link target="*bgVolumeDown"]音量减小[endlink]
+[locate x=400 y=0]
+文字显示速度
+[locate x=400 y=50]
+[link target=*fast]快速[r][endlink]
+[locate x=400 y=87]
+[link target=*normal]普通[r][endlink]
+[locate x=400 y=125]
+[link target=*slow]慢速[r][endlink]
 
+[locate x=345 y=465]
+[link target=*rclick]返回菜单[endlink]
+
+[endnowait]
 [s]
+
+; *bgVolumeUp
+; [iscript]
+; kag.bgmvolume += 10;
+; [endscript]
+; [jump target=*system]
+
+; *bgVolumeDown
+; [iscript]
+; kag.bgmvolume -= 10;
+; [endscript]
+*fast
+[iscript]
+kag.textspeed=8;
+[endscript]
+[jump target=*system]
+
+*normal
+[iscript]
+kag.textspeed=5;
+[endscript]
+[jump target=*system]
+
+*slow
+[iscript]
+kag.textspeed=2;
+[endscript]
+[jump target=*system]
 
 
 *history
