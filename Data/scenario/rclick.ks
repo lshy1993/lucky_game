@@ -25,7 +25,7 @@
 [rclick jump=true storage="rclick.ks" target="*exit" enabled=true]
 [tempsave]
 [locksnapshot]
-[history output=false]
+[history output=false  enabled=false]
 [current layer=message5]
 
 ;menu layer: msg5
@@ -52,7 +52,7 @@
 [locate x=260 y=540]
 [button layer=1 normal=diaochadian1 on=diaochadian2 target=*exitgame clickse=queren]
 
-[nowait]			
+[nowait]
 [font_black]
 [position layer=message6 visible=true opacity=0 left=0 top=0 width=800 height=600]
 [current layer=message6]
@@ -261,11 +261,11 @@
 [locate x=50 y=0]
 背景音音量
 [locate x=0 y=100]
-[slider value="kag.bgmvolume" base="track" width=0 height=0 normal="handle"]
+[slider value="kag.bgmvolume" base="track" normal="handle" height=14]
 [locate x=50 y=200]
 音效音量
 [locate x=0 y=300]
-[slider value="kag.sevolume" base="track" width=0 height=0 normal="handle"]
+[slider value="kag.sevolume" base="track" normal="handle" height=14]
 ; [link target="*bgVolumeDown"]音量减小[endlink]
 [locate x=400 y=0]
 文字显示速度
@@ -313,6 +313,10 @@ kag.textspeed=2;
 
 *history
 [rclick call=false enabled=false]
+[current layer=message5]
+[er]
+[current layer=message6]
+[er]
 [showhistory]
 ; [locate x=345 y=465]
 ; [nowait]

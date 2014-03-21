@@ -79,10 +79,10 @@ class SliderLayer extends KAGLayer
         
         if (focused && !nohilight)	{
             // ¥Õ¥©©`¥«¥¹¤¬¤¢¤ë¤Î¤Ç¥Ï¥¤¥é¥¤¥È¤¹¤ë
-            colorRect(0, 0, width-1, 1, clHighlight, 128);
-            colorRect(0, 1, 1, height-2, clHighlight, 128);
-            colorRect(0, height-1, width, 1, clHighlight, 128);
-            colorRect(width-1, 0, 1, height-1, clHighlight, 128);
+            //colorRect(0, 0, width-1, 1, clHighlight, 128);
+            //colorRect(0, 1, 1, height-2, clHighlight, 128);
+            //colorRect(0, height-1, width, 1, clHighlight, 128);
+            //colorRect(width-1, 0, 1, height-1, clHighlight, 128);
         }
         
         if (vertical) {
@@ -107,7 +107,7 @@ class SliderLayer extends KAGLayer
             if (tabImage !== void) {
                 
                 var tabw = Slider_tabWidth;
-                var tabx = (imw - tabw) / 2;
+                //var tabx = (imw - tabw) / 2;
 
                 if (Slider_dragging) {
                     // on
@@ -155,13 +155,14 @@ class SliderLayer extends KAGLayer
                 
                 var tabh = Slider_tabHeight;
                 var taby = (imh - tabh) / 2;
+                //var taby = 0;
                 
                 if (Slider_dragging) {
                     // on
                     operateRect(x_htabw, taby, tabImage, tabw, 0, tabw, tabh);
                 } else if (Slider_mouseOn) {
                     // over
-                    operateRect(x_htabw, taby, tabImage, tabw*2, 0, tabw, tabh);
+                    operateRect(x_htabw, taby, tabImage, tabw, 0, tabw, tabh);
                 } else {
                     // normal
                     operateRect(x_htabw, taby, tabImage, 0, 0, tabw, tabh);
