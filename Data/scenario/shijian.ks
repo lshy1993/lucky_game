@@ -306,6 +306,52 @@
 [layopt layer=message5 visible=false]
 [wait time=2000]
 @jump storage=first.ks target=*0036
+
+*0007
+[cl all]
+[position layer=message2 frame="time" visible="true" left=20 top=475 width=640 height=108 marginl=165 margint=15 page=back]
+[trans method=crossfade time=1000]
+[wt]
+[wait time=200]
+[m2]
+[font_green]
+   
+@dazi
+同
+@dazi
+日   
+@dazi
+下
+@dazi
+午   
+@dazi
+1
+@dazi
+时
+@dazi
+1
+@dazi
+5
+@dazi
+分[r]
+       
+@dazi
+某
+@dazi
+办
+@dazi
+公
+@dazi
+室
+@dazi
+门
+@dazi
+口
+[p]
+[position layer=message2 page=fore frame="" opacity=0 left=20 top=480 width=640 height=108 marginl=25 margint=5]
+[layopt layer=message5 visible=false]
+[wait time=2000]
+@jump storage=first.ks target=*0101
 ;;;;;;;;;;----------end of chapter 2----------;;;;;;;;;;
 
 ;;;;;;;;;;----------chapter3 shijian----------;;;;;;;;;;

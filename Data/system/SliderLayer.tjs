@@ -18,8 +18,8 @@ class SliderLayer extends KAGLayer
     var Slider_min = 0;   // 最小値
     var Slider_max = 100; // 最大値
     var Slider_position = 0; // 位置
-	var Slider_tabWidth = 10; // つまみサイズ
-    var Slider_tabHeight = 10; // つまみサイズ（縦用)
+	var Slider_tabWidth = 7; // つまみサイズ
+    var Slider_tabHeight = 7; // つまみサイズ（縦用)
     var Slider_dragging = false; // ドラッグ中かどうか
 	var Slider_dragOriginX; // ドラッグ開始 X 位置
     var Slider_dragOriginY; // ドラッグ開始 Y 位置
@@ -154,8 +154,8 @@ class SliderLayer extends KAGLayer
             if (tabImage !== void) {
                 
                 var tabh = Slider_tabHeight;
-                var taby = (imh - tabh) / 2;
-                //var taby = 0;
+                //var taby = (imh - tabh) / 2;
+                var taby = 0;
                 
                 if (Slider_dragging) {
                     // on

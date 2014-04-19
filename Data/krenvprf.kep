@@ -5,8 +5,8 @@ stayontop=0
 
 [console]
 autoshowonerror=0
-left=846
-top=32
+left=774
+top=46
 width=515
 height=389
 exprhist=f.hpbar@-@*jump@-@*[jump target=*0038]@-@*[exp jump target=*0038]@-@*@-@*

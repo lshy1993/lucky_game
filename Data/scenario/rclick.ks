@@ -39,40 +39,23 @@
 [layopt layer=message4 page=fore visible=false]
 [layopt layer=message5 page=fore visible=true]
 [er]
-[locate x=260 y=140]
-[button layer=1 normal=diaochadian1 on=diaochadian2 target=*load clickse=queren]
-[locate x=260 y=220]
-[button layer=1 normal=diaochadian1 on=diaochadian2 target=*save clickse=queren]
-[locate x=260 y=300]
-[button layer=1 normal=diaochadian1 on=diaochadian2 target=*history clickse=queren]
-[locate x=260 y=380]
-[button layer=1 normal=diaochadian1 on=diaochadian2 target=*system clickse=queren]
-[locate x=260 y=460]
-[button layer=1 normal=diaochadian1 on=diaochadian2 target=*backtitle clickse=queren]
-[locate x=260 y=540]
-[button layer=1 normal=diaochadian1 on=diaochadian2 target=*exitgame clickse=queren]
+[locate x=320 y=150]
+[button layer=1 normal=menu1 on=menu11 target=*save clickse=queren]
+[locate x=320 y=200]
+[button layer=1 normal=menu2 on=menu21 target=*load clickse=queren]
+[locate x=320 y=250]
+[button layer=1 normal=menu3 on=menu31 target=*evidence clickse=queren]
+[locate x=320 y=300]
+[button layer=1 normal=menu4 on=menu41 target=*history clickse=queren]
+[locate x=320 y=350]
+[button layer=1 normal=menu5 on=menu51 target=*system clickse=queren]
+[locate x=320 y=400]
+[button layer=1 normal=menu6 on=menu61 target=*backtitle clickse=queren]
+[locate x=320 y=450]
+[button layer=1 normal=menu7 on=menu71 target=*exitgame clickse=queren]
+[s]
 
-[nowait]
-[font_black]
-[position layer=message6 visible=true opacity=0 left=0 top=0 width=800 height=600]
-[current layer=message6]
-[er]
-
-[locate x=345 y=145]
-读取进度
-[locate x=345 y=225]
-保存进度
-[locate x=345 y=305]
-历史记录
-[locate x=345 y=385]
-系统设置
-[locate x=345 y=465]
-返回标题
-[locate x=345 y=545]
-退出游戏
-
-[endnowait]
-; [er]
+*evidence
 [s]
 
 
@@ -83,22 +66,16 @@
 [layopt layer=message3 page=fore visible=true]
 [layopt layer=message4 page=fore visible=true]
 [layopt layer=message5 page=fore visible=false]
-[layopt layer=message6 page=fore visible=false]
 [current layer=message2]
 [history output=true enabled=true]
 [rclick call=true storage="rclick.ks" target="*rclick" enabled=true]
 [return]
 
+
 *load
 [rclick call=false enabled=false]
-
 [position layer=message5 page=fore frame="" left=0 top=0 width=800 height=600 marginl=0 margint=0]
 [current layer=message5]
-[er]
-
-
-[position layer=message6 visible=true opacity=0 left=0 top=0 width=800 height=600]
-[current layer=message6]
 [er]
 [nowait]
 
@@ -106,10 +83,8 @@
 [button normal=&(kag.getBookMarkFileNameAtNum(0)) cond="kag.bookMarkDates[0] != void"]
 [button normal="nodata" cond="kag.bookMarkDates[0] == void"]
 [locate x=280 y=145]
-
 [emb exp="kag.bookMarkDates[0]" cond="kag.bookMarkDates[0] != void"]
 [emb exp="'no data'" cond="kag.bookMarkDates[0] == void"]
-
 [locate x=500 y=145]
 [link target=*load0]Load[endlink]
 
@@ -163,18 +138,11 @@
 [jump target=*rclick]
 
 
-; *save
-; [rclick call=false enabled=false]
 *save
 [rclick call=false enabled=false]
 
 [position layer=message5 page=fore frame="" left=0 top=0 width=800 height=600 marginl=0 margint=0]
 [current layer=message5]
-[er]
-
-
-[position layer=message6 visible=true opacity=0 left=0 top=0 width=800 height=600]
-[current layer=message6]
 [er]
 [nowait]
 
@@ -182,10 +150,8 @@
 [button normal=&(kag.getBookMarkFileNameAtNum(0)) cond="kag.bookMarkDates[0] != void"]
 [button normal="nodata" cond="kag.bookMarkDates[0] == void"]
 [locate x=280 y=145]
-
 [emb exp="kag.bookMarkDates[0]" cond="kag.bookMarkDates[0] != void"]
 [emb exp="'no data'" cond="kag.bookMarkDates[0] == void"]
-
 [locate x=500 y=145]
 [link target=*save0]Save[endlink]
 
@@ -244,10 +210,6 @@
 [rclick call=false enabled=false]
 [position layer=message5 page=fore frame="" left=0 top=0 width=800 height=600 marginl=0 margint=0]
 [current layer=message5]
-[er]
-[current layer=message6]
-[er]
-[current layer=message5]
 
 [nowait]
 [locate x=245 y=150]
@@ -261,11 +223,11 @@
 [locate x=50 y=0]
 背景音音量
 [locate x=0 y=100]
-[slider value="kag.bgmvolume" base="track" normal="handle" height=14]
+[slider value="kag.bgmvolume" base="track" normal="handle"]
 [locate x=50 y=200]
 音效音量
 [locate x=0 y=300]
-[slider value="kag.sevolume" base="track" normal="handle" height=14]
+[slider value="kag.sevolume" base="track" normal="handle"]
 ; [link target="*bgVolumeDown"]音量减小[endlink]
 [locate x=400 y=0]
 文字显示速度
