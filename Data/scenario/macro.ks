@@ -13,12 +13,11 @@
 
 @macro name=displayInfor
 ;this macro is used for print the name and control format of printing further informations
-
-[layopt layer=message1 page=fore visible=true]
+;[layopt layer=message1 page=back visible=true]
 [current layer=message1 page=fore withback=ture]
 [er][nowait]¡¾[ch text=%renming]¡¿[endnowait]
 [wait time=300]
-[layopt layer=message2 page=fore visible=true]
+;[layopt layer=message2 page=fore visible=true]
 [current layer=message2 page=fore withback=ture]
 [er]
 @endmacro
@@ -351,6 +350,10 @@
 
 @macro name=font_blue
 [font color=0x65ccff]
+@endmacro
+
+@macro name=font_darkblue
+[font color=0x0000ff]
 @endmacro
 
 @macro name=font_orange

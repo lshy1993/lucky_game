@@ -117,240 +117,77 @@
 
 ;;;;;;;;;;----------chapter2 shijian----------;;;;;;;;;;
 *0003
-[cl layer=1]
 [cm]
-[wait time=400]
 [cl layer=1 time=600]
 [bg storage=qs time=600]
-[position layer=message2 frame="time" visible="true" left=20 top=475 width=640 height=108 marginl=165 margint=15 page=back]
-[trans method=crossfade time=1000]
-[wt]
-[wait time=200]
-[m2]
-[font_green]
-8
-@dazi
-月
-@dazi
-1
-@dazi
-3
-@dazi
-日   
-@dazi
-上
-@dazi
-午   
-@dazi
-0
-@dazi
-9
-@dazi
-点
-@dazi
-3
-@dazi
-0
-@dazi
-分[r]
-    
-@dazi
-李
-@dazi
-云
-@dazi
-萧
-@dazi
-的
-@dazi
-寝
-@dazi
-室
-[p]
-[position layer=message2 page=fore frame="" opacity=0 left=20 top=480 width=640 height=108 marginl=25 margint=5]
-[layopt layer=message5 visible=false]
-[wait time=1000]
-@jump storage=first.ks target=*0033
+[position layer=message2 frame="place" visible=true left=0 top=640 width=800 height=120 marginl=0 margint=20 page=fore]
+[move layer=message2 time=500 path=(0,640,0)(0,300,255)]
+[current layer=message2 page=fore withback=ture]
+[style align=center]
+[font_white]
+[nowait]8月13日上午    09时30分[r]
+李云萧的寝室[r][endnowait]
+[wm][l]
+[move layer=message2 time=500 path=(0,300,255)(0,640,0)]
+[wm]
+@jump storage=first.ks target=*chapter2
 
 *0004
 [cl all]
 [bg storage=js time=600]
-[position layer=message2 frame="time" visible="true" left=20 top=475 width=640 height=108 marginl=165 margint=15 page=back]
-[trans method=crossfade time=1000]
-[wt]
-[wait time=200]
-[m2]
-[font_green]
-@dazi
-同
-@dazi
-日   
-@dazi
-上
-@dazi
-午   
-@dazi
-9
-@dazi
-时
-@dazi
-5
-@dazi
-0
-@dazi
-分[r]
-        
-@dazi
-某
-@dazi
-教
-@dazi
-室
-[p]
-[position layer=message2 page=fore frame="" opacity=0 left=20 top=480 width=640 height=108 marginl=25 margint=5]
-[layopt layer=message5 visible=false]
-[wait time=2000]
+[position layer=message2 frame="place" visible=true left=0 top=640 width=800 height=120 marginl=0 margint=20 page=fore]
+[move layer=message2 time=500 path=(0,640,0)(0,300,255)]
+[current layer=message2 page=fore withback=ture]
+[style align=center]
+[font_white]
+[nowait]同日上午    09时50分[r]
+某教室[r][endnowait]
+[wm][l]
+[move layer=message2 time=500 path=(0,300,255)(0,640,0)]
+[wm]
 @jump storage=first.ks target=*0034
 
 *0005
 [cl all]
 [bg storage=bgs time=600]
-[position layer=message2 frame="time" visible="true" left=20 top=475 width=640 height=108 marginl=165 margint=15 page=back]
-[trans method=crossfade time=1000]
-[wt]
-[wait time=200]
-[m2]
-[font_green]
-   
-@dazi
-同
-@dazi
-日   
-@dazi
-上
-@dazi
-午   
-@dazi
-1
-@dazi
-0
-@dazi
-时
-@dazi
-0
-@dazi
-5
-@dazi
-分[r]
-       
-@dazi
-某
-@dazi
-办
-@dazi
-公
-@dazi
-室
-@dazi
-门
-@dazi
-口
-[p]
-[position layer=message2 page=fore frame="" opacity=0 left=20 top=480 width=640 height=108 marginl=25 margint=5]
-[layopt layer=message5 visible=false]
-[wait time=2000]
+[position layer=message2 frame="place" visible=true left=0 top=640 width=800 height=120 marginl=0 margint=20 page=fore]
+[move layer=message2 time=500 path=(0,640,0)(0,300,255)]
+[current layer=message2 page=fore withback=ture]
+[style align=center]
+[font_white]
+[nowait]同日上午    10时05分[r]
+办公室门口[r][endnowait]
+[wm][l]
+[move layer=message2 time=500 path=(0,300,255)(0,640,0)]
+[wm]
 @jump storage=first.ks target=*0035
 
 *0006
 [cl all]
-[position layer=message2 frame="time" visible="true" left=20 top=475 width=640 height=108 marginl=165 margint=15 page=back]
-[trans method=crossfade time=1000]
-[wt]
-[wait time=200]
-[m2]
-[font_green]
-   
-@dazi
-同
-@dazi
-日   
-@dazi
-下
-@dazi
-午   
-@dazi
-1
-@dazi
-时
-@dazi
-1
-@dazi
-5
-@dazi
-分[r]
-       
-@dazi
-某
-@dazi
-办
-@dazi
-公
-@dazi
-室
-@dazi
-门
-@dazi
-口
-[p]
-[position layer=message2 page=fore frame="" opacity=0 left=20 top=480 width=640 height=108 marginl=25 margint=5]
-[layopt layer=message5 visible=false]
-[wait time=2000]
+[position layer=message2 frame="place" visible=true left=0 top=640 width=800 height=120 marginl=0 margint=20 page=fore]
+[move layer=message2 time=500 path=(0,640,0)(0,300,255)]
+[current layer=message2 page=fore withback=ture]
+[style align=center]
+[font_white]
+[nowait]同日下午    01时05分[r]
+办公室门口[r][endnowait]
+[wm][l]
+[move layer=message2 time=500 path=(0,300,255)(0,640,0)]
+[wm]
 @jump storage=first.ks target=*0036
 
 *0007
 [cl all]
-[position layer=message2 frame="time" visible="true" left=20 top=475 width=640 height=108 marginl=165 margint=15 page=back]
-[trans method=crossfade time=1000]
-[wt]
-[wait time=200]
-[m2]
-[font_green]
-   
-@dazi
-同
-@dazi
-日   
-@dazi
-下
-@dazi
-午   
-@dazi
-1
-@dazi
-时
-@dazi
-1
-@dazi
-5
-@dazi
-分[r]
-       
-@dazi
-某
-@dazi
-办
-@dazi
-公
-@dazi
-室
-@dazi
-门
-@dazi
-口
-[p]
-[position layer=message2 page=fore frame="" opacity=0 left=20 top=480 width=640 height=108 marginl=25 margint=5]
-[layopt layer=message5 visible=false]
-[wait time=2000]
+[position layer=message2 frame="place" visible=true left=0 top=640 width=800 height=120 marginl=0 margint=20 page=fore]
+[move layer=message2 time=500 path=(0,640,0)(0,300,255)]
+[current layer=message2 page=fore withback=ture]
+[style align=center]
+[font_white]
+[nowait]同日下午    01时15分[r]
+办公室门口[r][endnowait]
+[wm][l]
+[move layer=message2 time=500 path=(0,300,255)(0,640,0)]
+[wm]
 @jump storage=first.ks target=*0101
 ;;;;;;;;;;----------end of chapter 2----------;;;;;;;;;;
 

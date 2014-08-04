@@ -1,6 +1,6 @@
 *begin01
-@layopt layer=message1  visible=false
-@layopt layer=message2  visible=false
+@layopt layer=message1 visible=false
+@layopt layer=message2 visible=false
 [cm]
 [m4]
 [locate x=0 y=0]
@@ -191,12 +191,12 @@
 @layopt layer=message2  visible=false
 [cm]
 [m4]
-[locate x=20 y=0]
-[button layer=1 normal=diaocha1 on=diaocha2 hint=调查 storage=diaocha.ks target=*error02 clickse=queren]
-[locate x=120 y=0]
-[button layer=1 normal=duihua1 on=duihua2 hint=对话 storage=diaocha.ks target=*case02 clickse=queren]
-[locate x=220 y=0]
-[button layer=1 normal=yidong1 on=yidong2 hint=移动 storage=diaocha.ks target=*error02 clickse=queren]
+[locate x=0 y=0]
+[button layer=1 normal=fun1 over=fun1on on=fun1down hint=调查 storage=diaocha.ks target=*error02 clickse=queren]
+[locate x=208 y=0]
+[button layer=1 normal=fun2 over=fun2on on=fun2down hint=对话 storage=diaocha.ks target=*case02 clickse=queren]
+[locate x=416 y=0]
+[button layer=1 normal=fun3 over=fun3on on=fun3down hint=移动 storage=diaocha.ks target=*error02 clickse=queren]
 [s]
 
 *error02
