@@ -16,13 +16,18 @@
 ;; Status: 
 ;; Table of Contents: 
 ;; 
-;;     Update #: 6
+;;     Update #: 14
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 ; Code:
 
 
 *main
+[position layer=message7 opacity=0 visible=true]
+[current layer=message7]
+
+
+*setEvidence
 [iscript]
 
 
@@ -56,9 +61,19 @@ class Evidence{
 }
 
 
+
 [endscript]
 
+*displayEvidence
+[iscript]
+var name = "≤‚ ‘";
+var text = "÷§æ›≤‚ ‘";
+var image = "../fgimage/c00.png";
 
+evidence = new Evidence( name, text, image);
+[endscript]
 
+[button layer=6 normal=bt_l3 on=bt_l4]
+[button layer=6 normal=bt_r3 on=bt_r4]
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;

@@ -5,6 +5,8 @@
         message2           文字
         message3           选项
         message4           button
+	message5 	   菜单
+	message6	   历史
 
 图片层：名称               内容
 
@@ -18,6 +20,8 @@
         4                  动画3      敲锤子 接受证物
         5                  动画4      证言中 反对 等下 接招 血条光标
         6                  证物层 详细
+	7(计划)		   证物层 显示
+ 
 
 音效：文件名               内容
 
@@ -60,4 +64,3 @@ macro：名称                内容
        xuetiaoyidong       扣血槽
        xuetiaobiao         显示扣血量
 
-adfafa
