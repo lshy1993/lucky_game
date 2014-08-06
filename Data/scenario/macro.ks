@@ -14,6 +14,11 @@
 @macro name=displayInfor
 ;this macro is used for print the name and control format of printing further informations
 ;[layopt layer=message1 page=back visible=true]
+;[if exp="kag.autoMode"]
+;[eval exp="kag.fore.messages[2].buttons.auto.loadButtons('qfun2_on', 'qfun2_o', 'qfun2_on')"]
+;[else]
+;[eval exp="kag.fore.messages[2].buttons.auto.loadButtons('qfun2_n', 'qfun2_o', 'qfun2_n')"]
+;[endif]
 [current layer=message1 page=fore withback=ture]
 [er][nowait]【[ch text=%renming]】[endnowait]
 [wait time=300]
@@ -23,10 +28,25 @@
 @endmacro
 
 
+@macro name=setbotton
+[position layer=message2 visible=true frame="dialog" opacity=0 left=20 top=475 width=760 height=110 marginl=25 margint=10 page=back]
+[current layer=message2 page=back]
+[sysbutton name=close x=695 y=5 normal=qfun1_n over=qfun1_o exp="kag.callExtraConductor('rclick.ks', '*hide')"]
+[sysbutton name=auto x=695 y=25 normal=qfun2_n over=qfun2_o exp="kag.enterAutoMode()"]
+[sysbutton name=menu x=695 y=45 normal=qfun3_n over=qfun3_o exp="kag.callExtraConductor('rclick.ks', '*rclick')"]
+[sysbutton name=qsave x=695 y=65 normal=qfun4_n over=qfun4_o exp=""]
+[sysbutton name=qload x=695 y=85 normal=qfun5_n over=qfun5_o exp=""]
+@endmacro
 
 @macro name=m3
-[position layer=message3 opacity=0 visible=true left=0 top=0]
-[current layer=message3]
+[layopt layer=message3 visible=true]
+[current layer=message3 page=fore withback=ture]
+[er]
+@endmacro
+
+@macro name=m4
+[layopt layer=message4 page=fore visible=true]
+[current layer=message4 page=fore withback=ture]
 [er]
 @endmacro
 
@@ -41,15 +61,9 @@
 [delay speed=175]
 @endmacro
 
-
 @macro name=typingend
 [stopse buf="1"]
 [delay speed=user]
-@endmacro
-
-@macro name=m4
-[layopt layer=message4 page=fore visible=true]
-[current layer=message4 page=fore withback=ture]
 @endmacro
 
 @macro name=ft1
@@ -464,6 +478,20 @@
 [but1 b1=bt03 b2=bt04]
 @endmacro
 
+@macro name=new2
+[cm]
+[layopt layer=message1 visible=false]
+[image layer=5 storage=action2 opacity=0 top=0 left=0 visible=true]
+[eval exp="f.证据数目=f.证据数目+1"]
+[se storage=13]
+[ch text=%evidenceinfo]
+[move layer=5 time=300 path=(-800,250,0)(0,250,255)]
+[wm]
+[p]
+[move layer=5 time=300 path=(0,250,255)(800,250,0)]
+[wm]
+@endmacro
+
 @macro name=savepic
 [current page=back layer=message5][er][nowait][font face="微软雅黑" size=18 color=0xffffff]
 
@@ -471,12 +499,9 @@
 [button normal="nodata" cond="kag.bookMarkDates[%bookMarkName] == void"]
 [link]
 
-
 @endmacro
 
-
 @macro name=loadpic
-
 
 @endmacro
 

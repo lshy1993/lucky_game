@@ -35,7 +35,7 @@
 
 ;第二章 似曾相识
 *select1
-[cm]
+;[cm]
 [wait time=600]
 [bg storage=qs]
 [backlay]

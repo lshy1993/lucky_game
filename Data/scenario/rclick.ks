@@ -26,23 +26,39 @@
 [tempsave]
 [locksnapshot]
 [history output=false  enabled=false]
-[current layer=message5]
-
-;menu layer: msg5
-
-
-[position layer=message5 page=fore frame="" left=0 top=0 width=800 height=600 marginl=0 margint=0]
+[eval exp="f.temp0=false"]
+[eval exp="f.temp1=false"]
+[eval exp="f.temp2=false"]
+[eval exp="f.temp3=false"]
+[eval exp="f.temp4=false"]
+[if exp="kag.fore.messages[0].visible"]
 [layopt layer=message0 page=fore visible=false]
+[eval exp="f.temp0=true"]
+[endif]
+[if exp="kag.fore.messages[1].visible"]
 [layopt layer=message1 page=fore visible=false]
+[eval exp="f.temp1=true"]
+[endif]
+[if exp="kag.fore.messages[2].visible"]
 [layopt layer=message2 page=fore visible=false]
+[eval exp="f.temp2=true"]
+[endif]
+[if exp="kag.fore.messages[3].visible"]
 [layopt layer=message3 page=fore visible=false]
+[eval exp="f.temp3=true"]
+[endif]
+[if exp="kag.fore.messages[4].visible"]
 [layopt layer=message4 page=fore visible=false]
+[eval exp="f.temp4=true"]
+[endif]
 [layopt layer=message5 page=fore visible=true]
+
+[current layer=message5]
 [er]
 [locate x=320 y=150]
-[button layer=1 normal=menu1 on=menu11 target=*save clickse=queren]
+[button layer=1 normal=menu1 on=menu11 storage=save.ks target=*save clickse=queren]
 [locate x=320 y=200]
-[button layer=1 normal=menu2 on=menu21 target=*load clickse=queren]
+[button layer=1 normal=menu2 on=menu21 storage=load.ks target=*load clickse=queren]
 [locate x=320 y=250]
 [button layer=1 normal=menu3 on=menu31 target=*evidence clickse=queren]
 [locate x=320 y=300]
@@ -60,17 +76,16 @@
 
 
 *exit
-[layopt layer=message0 page=fore visible=true]
-[layopt layer=message1 page=fore visible=true]
-[layopt layer=message2 page=fore visible=true]
-[layopt layer=message3 page=fore visible=true]
-[layopt layer=message4 page=fore visible=true]
+[layopt layer=message0 page=fore visible=true cond="f.temp0"]
+[layopt layer=message1 page=fore visible=true cond="f.temp1"]
+[layopt layer=message2 page=fore visible=true cond="f.temp2"]
+[layopt layer=message3 page=fore visible=true cond="f.temp3"]
+[layopt layer=message4 page=fore visible=true cond="f.temp4"]
 [layopt layer=message5 page=fore visible=false]
-[current layer=message2]
+;[current layer=message2]
 [history output=true enabled=true]
 [rclick call=true storage="rclick.ks" target="*rclick" enabled=true]
 [return]
-
 
 *load
 [rclick call=false enabled=false]
@@ -296,7 +311,9 @@ kag.textspeed=2;
 [return storage=first.ks target=*title]
 [s]
 
-
+*hide
+[hidemessage]
+[return]
 
 *exitgame
 [rclick call=false enabled=false]

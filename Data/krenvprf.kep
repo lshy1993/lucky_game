@@ -5,8 +5,8 @@ stayontop=0
 
 [console]
 autoshowonerror=0
-left=774
-top=46
+left=1043
+top=317
 width=515
 height=389
 exprhist=f.hpbar@-@*jump@-@*[jump target=*0038]@-@*[exp jump target=*0038]@-@*@-@*
@@ -22,13 +22,13 @@ content=[new]@-@*
 stayontop=0
 
 [watch]
-left=1012
-top=275
+left=1051
+top=453
 width=299
 height=223
 col0width=140
 col1width=400
 stayontop=0
-exprlist=f.证据数目@-@*f.人物数目@-@*f.证据@-@*f.证词@-@*f.威慑@-@*f.证词编号@-@*f.dictEvidence@-@*f.openAdd1ForChap3DiaoCha01@-@*f.openAdd2ForChap3DiaoCha01@-@*f.进入过教室@-@*
+exprlist=f.证据数目@-@*f.人物数目@-@*f.证据@-@*f.证词@-@*f.威慑@-@*f.证词编号@-@*f.dictEvidence@-@*f.openAdd1ForChap3DiaoCha01@-@*f.openAdd2ForChap3DiaoCha01@-@*f.进入过教室@-@*kag.fore.messages[1].visible@-@*f.temp1@-@*
 interval=1000
 
