@@ -64,7 +64,8 @@ class Evidence{
 
 [endscript]
 
-*displayEvidence
+*test
+; just for test
 [iscript]
 var name = "≤‚ ‘";
 var text = "÷§æ›≤‚ ‘";
@@ -73,6 +74,8 @@ var image = "../fgimage/c00.png";
 evidence = new Evidence( name, text, image);
 [endscript]
 
+
+*displayEvidence
 [button layer=6 normal=bt_l3 on=bt_l4]
 [button layer=6 normal=bt_r3 on=bt_r4]
 
