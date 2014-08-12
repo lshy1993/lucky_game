@@ -5,25 +5,25 @@ stayontop=0
 
 [console]
 autoshowonerror=0
-left=1043
-top=317
+left=546
+top=341
 width=515
 height=389
-exprhist=f.hpbar@-@*jump@-@*[jump target=*0038]@-@*[exp jump target=*0038]@-@*@-@*
+exprhist=f.hpbar@-@*jump@-@*[jump target=*0038]@-@*[exp jump target=*0038]@-@*print typeof(f.dictEvidence)@-@*print typeof(f.dictEvidence);@-@*typeof(name)@-@*name@-@*text = %["name" => name]@-@*text@-@*addEvidence(name, text, image)@-@*test = %["name" => name, "text" => text, "image" => image]@-@*var test = %["name" => name, "text" => text, "image" => image]@-@*f.test = %["name" => name, "text" => text, "image" => image]@-@*addEvidence(f.test.name, f.test.text, f.test.image)@-@*typeof(f.test.text);@-@*typeof(f.test.name);@-@*typeof(f.dictEvidence);@-@*typeof(f.test);@-@*typeof(f.dictEvidence)@-@*typeof(dictEvidence)@-@*f.dictEvidence.add(f.test)@-@*f.dictEvidence@-@*f.dictEvidence[0].name@-@*typeof(f.arrEvidence[0].image)@-@*f.arrEvidence[0].image@-@*f.arrEvidence[0]@-@*@-@*
 stayontop=0
 font=pEpPpPpPaAaAaAaAaAaAaAaAaAaAaAaAjAaBaAaAaAaAaAiGaAaAaAaAmLmOmMoFaAaAaAaAaAaAaAaAaAaAaAaAaAaAaAaAaAaAaAaAaAaAaAaAaAaAaAaA
 
 [script editor]
-left=653
-top=330
+left=514
+top=518
 width=538
 height=352
-content=[new]@-@*
+content=[new]@-@*[iscript]@-@*print@-@*[endscript]@-@*
 stayontop=0
 
 [watch]
-left=1051
-top=453
+left=1060
+top=397
 width=299
 height=223
 col0width=140

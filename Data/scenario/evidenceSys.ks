@@ -22,61 +22,77 @@ evidenceSys.ks ---
 ; Code:
 
 
-*main
-[position layer=message7 opacity=0 visible=true]
-[current layer=message7]
-
-
 *setEvidence
 [iscript]
 
 // data structure
-class Evidence{
-    var _name;
-    var _text;
-    var _image;
+
+//use array[name, text, image] to store information
+// class Evidence{
+//     var _name;
+//     var _text;
+//     var _image;
     
-    Evidence(name, text, image){
-	setParam(name, text, image);
-    }
+//     Evidence(name, text, image){
+// 	setParam(name, text, image);
+//     }
     
-    function setParam (name, text, image){
-	_name  =  name;
-	_text  =  text;
-	_image = image;	
-    }
+//     function setParam (name, text, image){
+// 	_name  =  name;
+// 	_text  =  text;
+// 	_image = image;	
+//     }
 
-    function getName(){
-	return name;
-    }
+//     function getName(){
+// 	return name;
+//     }
 
-    function getText(){
-	return text;
-    }
+//     function getText(){
+// 	return text;
+//     }
 
-    function getImage(){
-	return Image;
-    }
+//     function getImage(){
+// 	return Image;
+//     }
 
+// }
+
+
+// add to dictionary f.arrEvidence
+
+function addEvidence(name, text, image){
+    f.arrEvidence.add(%[ "name" => name, "text" => text, "image" => image]);
 }
-
-
-
 [endscript]
+[return]
+
 
 *test
 ; just for test
 [iscript]
-var name = "测试";
+var name = "律师徽章";
 var text = "证据测试";
-var image = "../fgimage/c00.png";
+var image = "evidence1.png";
+// addEvidence(name, text, image);
 
-evidence = new Evidence( name, text, image);
+// evidence = new Evidence( name, text, image);
+
 [endscript]
+[return]
 
 
 *displayEvidence
+[position layer=message5 opacity=0 visible=true]
+[current layer=message5]
+
+[cm]
+[locate x=175 y=100]
 [button layer=6 normal=bt_l3 on=bt_l4]
+; [button layer=6 storage=&'f.arrEvidence[0].image']
+
+[fg layer=6 storage=&'f.arrEvidence[0].image']
+[locate x=575 y=100]
 [button layer=6 normal=bt_r3 on=bt_r4]
+
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;

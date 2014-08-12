@@ -5153,29 +5153,46 @@ JUST THE END是什么意思？[p]
 [trans method=crossfade time=1000]
 [wt]
 [position layer=message2 page=fore frame="" opacity=0 left=20 top=480 width=640 height=108 marginl=25 margint=5]
-[eval exp="f.dictEvidence = %[]"]
+
+; entrance of evidence system
+[call storage=evidenceSys.ks target=*setEvidence]
+[call storage=evidenceSys.ks target=*test]
+; [eval exp="f.arrEvidence = %[]"]
+[eval exp="f.arrEvidence = new Array()"]
+; [eval exp="f.arrEvidence.clear"]
+; [eval exp="f.arrEvidence.add(%["name" => name, "text" => text, "image" => image])"]
+[iscript]
+// f.arrEvidence.add(%["name" => name, "text" => text, "image" => image]);
+addEvidence(name, text, image);
+
+[endscript]
 [eval exp="f.charaName = %[]"]
 [eval exp="f.hpBar = 5"]
 [eval exp="f.matta = %[]"]
-;;matta is japanese pronounciation, which means threating people 
+;matta is japanese pronounciation, which means threating people 
 
 
 
 [rclick call=true storage="rclick.ks" target="*rclick" enabled=true]
+;[locate x=300 y=300]
+;[button graphic=fun3 storage=evidenceSys.ks target=*displayEvidence clickse=queren]
+
 ; rclick menu
 
+
+; [iscript]
+; f.text=["abc","evideppnce4","txt"];
+; [endscript]
+; [eval exp='f.i=0']
+; [emb exp='f.text[f.i]'][p]
+; [emb exp='f.text[f.i+1]'][p]
+; [locate x=300 y=275]
+; [fg layer=1 storage=&'f.text[f.i+1]']
 [displayInfor renming=苗星刃]
-[iscript]
-f.text=["abc","evidence4","txt"];
-[endscript]
-[eval exp='f.i=0']
-[emb exp='f.text[f.i]'][p]
-[emb exp='f.text[f.i+1]'][p]
-[locate x=300 y=275]
-[fg layer=1 storage=&'f.text[f.i+1]']
 啊，今天可是难得的放假不上课的日子啊，[r][wait time=200ms]你怎么还窝在寝室。[p]
 
 ; [rclick call=true storage="rclick.ks" target="*rclick" enabled=true]
+
 
 [displayInfor renming=李云萧]不行吗？没有人规定我一定要出去啊。[p]
 
