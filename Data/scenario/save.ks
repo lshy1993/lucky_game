@@ -26,29 +26,29 @@
 [emb exp="kag.bookMarkDates[2]" cond="kag.bookMarkDates[2] != void"]
 
 ;;;;save4
-[locate x=40 y=400]
+[locate x=40 y=230]
 [button normal=&(kag.getBookMarkFileNameAtNum(3)) target=*save3 cond="kag.bookMarkDates[3] != void"]
 [button normal="nodata" cond="kag.bookMarkDates[3] == void"]
-[locate x=40 y=550]
+[locate x=40 y=380]
 [emb exp="kag.bookMarkDates[3]" cond="kag.bookMarkDates[3] != void"]
 
 ;;;;save5
-[locate x=300 y=400]
+[locate x=300 y=230]
 [button normal=&(kag.getBookMarkFileNameAtNum(4)) target=*save4 cond="kag.bookMarkDates[4] != void"]
 [button normal="nodata" cond="kag.bookMarkDates[4] == void"]
-[locate x=300 y=550]
+[locate x=300 y=380]
 [emb exp="kag.bookMarkDates[4]" cond="kag.bookMarkDates[4] != void"]
 
 ;;;;save6
-[locate x=560 y=400]
+[locate x=560 y=230]
 [button normal=&(kag.getBookMarkFileNameAtNum(5)) target=*save5 cond="kag.bookMarkDates[5] != void"]
 [button normal="nodata" cond="kag.bookMarkDates[5] == void"]
-[locate x=560 y=550]
+[locate x=560 y=380]
 [emb exp="kag.bookMarkDates[5]" cond="kag.bookMarkDates[5] != void"]
 
 ;;;;
-[locate x=175 y=240]
-[button normal=font_save]
+[locate x=175 y=450]
+[button normal=font_save over=font_save_o hint=·µ»Ø target=*exit]
 [endnowait]
 [trans layer=message5 method=crossfade time=500]
 [wt]
@@ -58,7 +58,7 @@
 [position layer=message5 visible=false page=back frame="" opacity=0 left=0 top=0 width=800 height=600 marginl=0 margint=0]
 [trans layer=message5 method=crossfade time=500]
 [wt]
-[jump storage=rclick.ks target=*rclick]
+[jump storage=rclick.ks target=*exit]
 
 *save0
 [save place=0 ask=true]

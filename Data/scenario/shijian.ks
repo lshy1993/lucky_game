@@ -118,6 +118,8 @@
 ;;;;;;;;;;----------chapter2 shijian----------;;;;;;;;;;
 *0003
 [cm]
+[layopt layer=message2 visible=false]
+[rclick enabled=false]
 [cl layer=1 time=600]
 [bg storage=qs time=600]
 [position layer=message1 frame="place" visible=true left=0 top=640 width=800 height=120 marginl=0 margint=20 page=fore]
@@ -133,7 +135,9 @@
 @jump storage=first.ks target=*chapter2
 
 *0004
-[cl all]
+[cm]
+[layopt layer=message2 visible=false]
+[rclick enabled=false]
 [bg storage=js time=600]
 [position layer=message1 frame="place" visible=true left=0 top=640 width=800 height=120 marginl=0 margint=20 page=fore]
 [move layer=message1 time=500 path=(0,640,0)(0,300,255)]
@@ -148,7 +152,9 @@
 @jump storage=first.ks target=*0034
 
 *0005
-[cl all]
+[cm]
+[layopt layer=message2 visible=false]
+[rclick enabled=false]
 [bg storage=bgs time=600]
 [position layer=message1 frame="place" visible=true left=0 top=640 width=800 height=120 marginl=0 margint=20 page=fore]
 [move layer=message1 time=500 path=(0,640,0)(0,300,255)]
@@ -163,7 +169,9 @@
 @jump storage=first.ks target=*0035
 
 *0006
-[cl all]
+[cm]
+[layopt layer=message2 visible=false]
+[rclick enabled=false]
 [bg storage=bgs time=600]
 [position layer=message1 frame="place" visible=true left=0 top=640 width=800 height=120 marginl=0 margint=20 page=fore]
 [move layer=message1 time=500 path=(0,640,0)(0,300,255)]
@@ -178,7 +186,9 @@
 @jump storage=first.ks target=*0036
 
 *0007
-[cl all]
+[cm]
+[layopt layer=message2 visible=false]
+[rclick enabled=false]
 [bg storage=bgs time=600]
 [position layer=message1 frame="place" visible=true left=0 top=640 width=800 height=120 marginl=0 margint=20 page=fore]
 [move layer=message1 time=500 path=(0,640,0)(0,300,255)]
