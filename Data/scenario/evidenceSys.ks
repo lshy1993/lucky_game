@@ -63,20 +63,11 @@ evidenceSys.ks ---
 function addEvidence(name, text, image){
     f.arrEvidence.add(%[ "name" => name, "text" => text, "image" => image]);
 }
-[endscript]
-[return]
 
+function addEvidenceFromDict( evidence){
+    f.arrEvidence.add(evidence);
 
-*test
-; just for test
-[iscript]
-var name = "律师徽章";
-var text = "证据测试";
-var image = "evidence1.png";
-// addEvidence(name, text, image);
-
-// evidence = new Evidence( name, text, image);
-
+}
 [endscript]
 [return]
 
@@ -90,8 +81,9 @@ var image = "evidence1.png";
 [button layer=6 normal=bt_l3 on=bt_l4]
 ; [button layer=6 storage=&'f.arrEvidence[0].image']
 
-[fg layer=6 storage=&'f.arrEvidence[0].image']
+[button layer=6 normal=&'f.arrEvidence[0].image']
 [locate x=575 y=100]
+
 [button layer=6 normal=bt_r3 on=bt_r4]
 
 

@@ -5156,16 +5156,16 @@ JUST THE END是什么意思？[p]
 
 ; entrance of evidence system
 [call storage=evidenceSys.ks target=*setEvidence]
-[call storage=evidenceSys.ks target=*test]
+[call storage=evidenceTable.ks target=*evidence0]
 ; [eval exp="f.arrEvidence = %[]"]
 [eval exp="f.arrEvidence = new Array()"]
 ; [eval exp="f.arrEvidence.clear"]
 ; [eval exp="f.arrEvidence.add(%["name" => name, "text" => text, "image" => image])"]
-[iscript]
-// f.arrEvidence.add(%["name" => name, "text" => text, "image" => image]);
-addEvidence(name, text, image);
 
-[endscript]
+
+
+
+
 [eval exp="f.charaName = %[]"]
 [eval exp="f.hpBar = 5"]
 [eval exp="f.matta = %[]"]
