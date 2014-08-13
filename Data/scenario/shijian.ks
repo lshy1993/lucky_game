@@ -241,14 +241,14 @@
 @dazi
 室
 [p]
-[typingstart]
-5月22日
-[typingend]
-   [typingstart]上午8时45分[typingend][r]
+; [typingstart]
+; 5月22日
+; [typingend]
+;    [typingstart]上午8时45分[typingend][r]
         
-[typingstart]
-李云萧的寝室
-[typingend]
+; [typingstart]
+; 李云萧的寝室
+; [typingend]
 [p]
 [position layer=message2 page=fore frame="" opacity=0 left=20 top=480 width=640 height=108 marginl=25 margint=5]
 [layopt layer=message5 visible=false]
