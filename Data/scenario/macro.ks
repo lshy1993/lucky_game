@@ -31,11 +31,12 @@
 @macro name=setbotton
 [position layer=message2 visible=true frame="dialog" opacity=0 left=20 top=475 width=760 height=110 marginl=25 margint=10 page=back]
 [current layer=message2 page=back]
-[sysbutton name=close x=695 y=5 normal=qfun1_n over=qfun1_o exp="kag.callExtraConductor('rclick.ks', '*hide')"]
-[sysbutton name=auto x=695 y=25 normal=qfun2_n over=qfun2_o exp="kag.enterAutoMode()"]
-[sysbutton name=menu x=695 y=45 normal=qfun3_n over=qfun3_o exp="kag.callExtraConductor('rclick.ks', '*rclick')"]
-[sysbutton name=qsave x=695 y=65 normal=qfun4_n over=qfun4_o exp=""]
-[sysbutton name=qload x=695 y=85 normal=qfun5_n over=qfun5_o exp=""]
+[sysbutton name=close x=645 y=5 normal=qfun1_n over=qfun1_o exp="kag.callExtraConductor('rclick.ks', '*hide')"]
+[sysbutton name=auto x=649 y=25 normal=qfun2_n over=qfun2_o exp="kag.enterAutoMode()"]
+[sysbutton name=menu x=649 y=45 normal=qfun3_n over=qfun3_o exp="kag.callExtraConductor('rclick.ks', '*rclick')"]
+[sysbutton name=qsave x=651 y=65 normal=qfun4_n over=qfun4_o exp=""]
+[sysbutton name=qload x=653 y=85 normal=qfun5_n over=qfun5_o exp=""]
+[sysbutton name=evidence x=705 y=3 normal=option_n over=option_o exp=""]
 @endmacro
 
 @macro name=m3

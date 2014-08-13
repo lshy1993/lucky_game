@@ -1,4 +1,5 @@
 *load
+[layopt layer=message0 visible=false]
 [rclick jump=true storage=load.ks target=*exit enabled=true]
 [position layer=message5 page=back frame="load" visible=true opacity=0 left=0 top=0 width=800 height=600 marginl=0 margint=0]
 [current layer=message5 page=back]
@@ -48,7 +49,7 @@
 
 ;;;;
 [locate x=175 y=240]
-[button normal=font_load]
+[button normal=font_load over=font_load_o hint=?? target=*exit]
 [endnowait]
 [trans layer=message5 method=crossfade time=500]
 [wt]
@@ -59,7 +60,12 @@
 [position layer=message5 visible=false page=back frame="" opacity=0 left=0 top=0 width=800 height=600 marginl=0 margint=0]
 [trans layer=message5 method=crossfade time=500]
 [wt]
+[if exp="f.backtotitle"]
+[layopt layer=message0 visible=true]
 [return]
+[else]
+[jump storage=rclick.ks target=*exit]
+[endif]
 
 *load0
 [load place=0 ask=true]

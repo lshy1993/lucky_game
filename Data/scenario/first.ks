@@ -29,8 +29,29 @@
 [call storage=macro.ks]
 [position layer=message3 page=fore frame="" opacity=0 left=0 top=0 width=800 height=600 marginl=0 margint=0]
 [position layer=message4 page=fore frame="" opacity=0 left=0 top=0 width=800 height=600 marginl=0 margint=0]
-[position layer=message5 visible=true page=fore frame="" opacity=0 left=0 top=0 width=800 height=600 marginl=0 margint=0]
+[position layer=message5 page=fore visible=true frame="" opacity=0 left=0 top=0 width=800 height=600 marginl=0 margint=0]
+[position layer=message6 page=fore visible=false opacity=0 left=0 top=0 width=800 height=600 marginl=0 margint=0]
+[current layer=message6 page=fore]
+[sysbutton x=150 y=135 name=voice1 normal=setting_but1_on onenter="voiceover(1)" exp="voiceswitch(1)"]
+[sysbutton x=250 y=135 name=voice2 normal=setting_but2_on onenter="voiceover(2)" exp="voiceswitch(2)"]
+[sysbutton x=350 y=135 name=voice3 normal=setting_but3_on onenter="voiceover(3)" exp="voiceswitch(3)"]
+[sysbutton x=450 y=135 name=voice4 normal=setting_but4_on onenter="voiceover(4)" exp="voiceswitch(4)"]
+[sysbutton x=550 y=135 name=voice5 normal=setting_but5_on onenter="voiceover(5)" exp="voiceswitch(5)"]
+[sysbutton x=650 y=135 name=voice6 normal=setting_but6_on onenter="voiceover(6)" exp="voiceswitch(6)"]
 
+[sysbutton x=300 y=240 name=speed1 normal=setting_speed1 over=setting_speed1_o onenter="speedover(1)" exp="speedset(1)"]
+[sysbutton x=400 y=240 name=speed2 normal=setting_speed2_on onenter="speedover(2)" exp="speedset(2)"]
+[sysbutton x=500 y=240 name=speed3 normal=setting_speed3 over=setting_speed3_o onenter="speedover(3)" exp="speedset(3)"]
+[sysbutton x=600 y=240 name=speed4 normal=setting_speed4 over=setting_speed4_o onenter="speedover(4)" exp="speedset(4)"]
+
+[sysbutton x=300 y=270 name=time1 normal=setting_time1 over=setting_time1_o onenter="timeover(1)" exp="timeset(1)"]
+[sysbutton x=400 y=270 name=time2 normal=setting_time2 over=setting_time2_o onenter="timeover(2)" exp="timeset(2)"]
+[sysbutton x=500 y=270 name=time3 normal=setting_time3_on onenter="timeover(3)" exp="timeset(3)"]
+
+[sysbutton x=350 y=365 name=mode1 normal=setting_mode1_on onenter="modeover(1)" exp="modeset(1)"]
+[sysbutton x=450 y=365 name=mode2 normal=setting_mode2 over=setting_mode2_o onenter="modeover(2)" exp="modeset(2)"]
+
+[rclick enabled=false]
 [history output=false enabled=false]
 [startanchor]
 ;[cm]
@@ -40,11 +61,12 @@
 [cm]
 [clearvar]
 [stopbgm]
+[eval exp="f.backtotitle=true"]
 [position layer=message0 page=fore frame="" left=0 top=0 opacity=0 width=800 height=600 visible=true]
 [current layer=message0 page=fore withback=ture]
 [bg storage=bg time=400]
 [locate x=310 y=360]
-[button normal=title1 over=title1_o on=title1_on storage=select.ks target=*select hint=新游戏]
+[button normal=title1 over=title1_o on=title1_on storage=select.ks target=*select exp="f.backtotitle=false" hint=新游戏]
 [locate x=310 y=400]
 [button normal=title2 over=title2_o on=title2_on exp="kag.callExtraConductor('load.ks','*load')" hint=读取存档]
 [locate x=310 y=440]
@@ -54,34 +76,6 @@
 [locate x=310 y=520]
 [button normal=title5 over=title5_o on=title5_on exp="kag.onCloseQuery()" hint=结束游戏]
 [s]
-
-*titleload
-[er]
-[bg storage=black time=400]
-[wt]
-[nowait]
-[locate y=200]
-[style align=center]
-[font color=0x000000 shadow=false]
-[link target=*lt0][emb exp="kag.getBookMarkPageName(0)"][endlink][r]
-[link target=*lt1][emb exp="kag.getBookMarkPageName(1)"][endlink][r]
-[link target=*lt2][emb exp="kag.getBookMarkPageName(2)"][endlink][r]
-[link target=*lt3][emb exp="kag.getBookMarkPageName(3)"][endlink][r]
-[link target=*lt4][emb exp="kag.getBookMarkPageName(4)"][endlink][r]
-[link target=*title]返回[endlink][r]
-[style align=default]
-[endnowait]
-[s]
-;;;;;;;;;;----------end of game start----------;;;;;;;;;;
-
-
-;;;;;;;;;;----------game exit----------;;;;;;;;;;
-*titleexit
-[eval exp='kag.onCloseQuery()']
-[jump target=*title]
-[s]
-;;;;;;;;;;----------end of game exit----------;;;;;;;;;;
-
 
 ;;;;;;;;;;----------Chapter 1----------;;;;;;;;;;
 *0001
@@ -1556,6 +1550,7 @@
 [jump storage=shijian.ks target=*0004]
 
 *0034
+[rclick call=true storage="rclick.ks" target="*rclick" enabled=true]
 [position layer=message2 visible=true frame="dialog" opacity=0 left=20 top=475 width=760 height=110 marginl=25 margint=10 page=back]
 [trans method=crossfade time=1000]
 [wt]
@@ -1639,6 +1634,7 @@
 [s]
 
 *0035
+[rclick call=true storage="rclick.ks" target="*rclick" enabled=true]
 [position layer=message2 visible=true frame="dialog" opacity=0 left=20 top=475 width=760 height=110 marginl=25 margint=10 page=back]
 [trans method=crossfade time=1000]
 [wt]
@@ -1772,6 +1768,7 @@
 [s]
 
 *0036
+[rclick call=true storage="rclick.ks" target="*rclick" enabled=true]
 [position layer=message2 visible=true frame="dialog" opacity=0 left=20 top=475 width=760 height=110 marginl=25 margint=10 page=back]
 [trans method=crossfade time=1000]
 [wt]
@@ -2192,18 +2189,21 @@
 
 *z004
 [eval exp="f.证词编号=4"]
-[layopt layer=message1 visible=true]
+[layopt layer=message1 page=fore visible=false]
 [ani2]
 [cm]
-[but1 b1=bt03 b2=bt04]
+;[but1 b1=bt03 b2=bt04]
 [image layer=5 storage=text left=0 top=0 visible=true]
-[current layer=message2]
+[current layer=message2 page=fore]
 [nowait]
+[style align=center]
 [font_orange]
-               ～怀疑的理由 1～[p]
+～怀疑的理由 1～[p]
 [endnowait]
+[style align=left]
 [action layer=5 module=LayerBlinkModeModule showtime=1100 hidetime=1000]
 [playbgm storage="queslow3"]
+[layopt layer=message1 page=fore visible=true]
 [displayInfor renming=梁警官]
 看，这个是被害人身旁掉落的白纸，[r]
 白纸的背面留有用血写的名字。[p]
@@ -2212,8 +2212,8 @@
 难道说，这讯息有什么问题么？[p]
 [freeimage layer=5]
 [fadeoutbgm time=400]
-[layopt layer=message1 visible=false]
-[layopt layer=message4 visible=false]
+;[layopt layer=message1 visible=false]
+;[layopt layer=message4 visible=false]
 
 [wait time=500]
 [displayInfor renming=李云萧]

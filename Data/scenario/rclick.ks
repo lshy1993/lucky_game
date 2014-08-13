@@ -51,24 +51,26 @@
 [layopt layer=message4 page=fore visible=false]
 [eval exp="f.temp4=true"]
 [endif]
-[layopt layer=message5 page=fore visible=true]
-
-[current layer=message5]
+[position layer=message5 page=back frame="" visible=true opacity=100 left=0 top=0 width=800 height=600 marginl=0 margint=0]
+;[layopt layer=message5 page=back visible=true]
+[current layer=message5 page=back]
 [er]
 [locate x=320 y=150]
-[button layer=1 normal=menu1 on=menu11 storage=save.ks target=*save clickse=queren]
+[button normal=menu1 over=menu11 storage=save.ks target=*save clickse=queren]
 [locate x=320 y=200]
-[button layer=1 normal=menu2 on=menu21 storage=load.ks target=*load clickse=queren]
+[button normal=menu2 over=menu21 storage=load.ks target=*load clickse=queren]
 [locate x=320 y=250]
-[button layer=1 normal=menu3 on=menu31 target=*evidence clickse=queren]
+[button normal=menu3 over=menu31 target=*evidence clickse=queren]
 [locate x=320 y=300]
-[button layer=1 normal=menu4 on=menu41 target=*history clickse=queren]
+[button normal=menu4 over=menu41 target=*history clickse=queren]
 [locate x=320 y=350]
-[button layer=1 normal=menu5 on=menu51 target=*system clickse=queren]
+[button normal=menu5 over=menu51 storage=setting.ks target=*setting clickse=queren]
 [locate x=320 y=400]
-[button layer=1 normal=menu6 on=menu61 target=*backtitle clickse=queren]
+[button normal=menu6 over=menu61 target=*backtitle clickse=queren]
 [locate x=320 y=450]
-[button layer=1 normal=menu7 on=menu71 target=*exitgame clickse=queren]
+[button normal=menu7 over=menu71 target=*exitgame clickse=queren]
+[trans layer=message5 method=crossfade time=500]
+[wt]
 [s]
 
 *evidence
@@ -82,154 +84,22 @@
 [layopt layer=message2 page=fore visible=true cond="f.temp2"]
 [layopt layer=message3 page=fore visible=true cond="f.temp3"]
 [layopt layer=message4 page=fore visible=true cond="f.temp4"]
-[layopt layer=message5 page=fore visible=false]
-;[current layer=message2]
+[position layer=message5 visible=true page=fore frame="" opacity=0 left=0 top=0 width=800 height=600 marginl=0 margint=0]
+;[trans layer=message5 method=crossfade time=100]
+;[wt]
+[unlocksnapshot]
+[current layer=message2]
 [history output=true enabled=true]
 [rclick call=true storage="rclick.ks" target="*rclick" enabled=true]
 [return]
 
-*load
-[rclick call=false enabled=false]
-[position layer=message5 page=fore frame="" left=0 top=0 width=800 height=600 marginl=0 margint=0]
-[current layer=message5]
-[er]
-[nowait]
-
-[locate x=150 y=145]
-[button normal=&(kag.getBookMarkFileNameAtNum(0)) cond="kag.bookMarkDates[0] != void"]
-[button normal="nodata" cond="kag.bookMarkDates[0] == void"]
-[locate x=280 y=145]
-[emb exp="kag.bookMarkDates[0]" cond="kag.bookMarkDates[0] != void"]
-[emb exp="'no data'" cond="kag.bookMarkDates[0] == void"]
-[locate x=500 y=145]
-[link target=*load0]Load[endlink]
-
-[locate x=150 y=225]
-[button normal=&(kag.getBookMarkFileNameAtNum(1)) cond="kag.bookMarkDates[1] != void"]
-[button normal="nodata" cond="kag.bookMarkDates[1] == void"]
-[locate x=280 y=225]
-[emb exp="kag.bookMarkDates[1]" cond="kag.bookMarkDates[1] != void"]
-[emb exp="'no data'" cond="kag.bookMarkDates[1] == void"]
-[locate x=500 y=225]
-[link target=*load1]Load[endlink]
-
-[locate x=150 y=305]
-[button normal=&(kag.getBookMarkFileNameAtNum(2)) cond="kag.bookMarkDates[2] != void"]
-[button normal="nodata" cond="kag.bookMarkDates[2] == void"]
-[locate x=280 y=305]
-[emb exp="kag.bookMarkDates[2]" cond="kag.bookMarkDates[2] != void"]
-[emb exp="'no data'" cond="kag.bookMarkDates[2] == void"]
-[locate x=500 y=305]
-[link target=*load2]Load[endlink]
-
-[locate x=150 y=385]
-[button normal=&(kag.getBookMarkFileNameAtNum(2)) cond="kag.bookMarkDates[2] != void"]
-[button normal="nodata" cond="kag.bookMarkDates[2] == void"]
-[locate x=280 y=385]
-[emb exp="kag.bookMarkDates[2]" cond="kag.bookMarkDates[2] != void"]
-[emb exp="'no data'" cond="kag.bookMarkDates[2] == void"]
-[locate x=500 y=385]
-[link target=*load3]Load[endlink]
-
-[locate x=345 y=465]
-[link target=*rclick]返回菜单[endlink]
-
-[endnowait]
-[s]
-
-*load0
-[load place=0 ask=true]
-[jump target=*rclick]
-
-*load1
-[load place=1 ask=true]
-[jump target=*rclick]
-
-*load2
-[load place=2 ask=true]
-[jump target=*rclick]
-
-*load3
-[load place=3 ask=true]
-[jump target=*rclick]
-
-
-*save
-[rclick call=false enabled=false]
-
-[position layer=message5 page=fore frame="" left=0 top=0 width=800 height=600 marginl=0 margint=0]
-[current layer=message5]
-[er]
-[nowait]
-
-[locate x=150 y=145]
-[button normal=&(kag.getBookMarkFileNameAtNum(0)) cond="kag.bookMarkDates[0] != void"]
-[button normal="nodata" cond="kag.bookMarkDates[0] == void"]
-[locate x=280 y=145]
-[emb exp="kag.bookMarkDates[0]" cond="kag.bookMarkDates[0] != void"]
-[emb exp="'no data'" cond="kag.bookMarkDates[0] == void"]
-[locate x=500 y=145]
-[link target=*save0]Save[endlink]
-
-[locate x=150 y=225]
-[button normal=&(kag.getBookMarkFileNameAtNum(1)) cond="kag.bookMarkDates[1] != void"]
-[button normal="nodata" cond="kag.bookMarkDates[1] == void"]
-[locate x=280 y=225]
-[emb exp="kag.bookMarkDates[1]" cond="kag.bookMarkDates[1] != void"]
-[emb exp="'no data'" cond="kag.bookMarkDates[1] == void"]
-[locate x=500 y=225]
-[link target=*save1]Save[endlink]
-
-[locate x=150 y=305]
-[button normal=&(kag.getBookMarkFileNameAtNum(2)) cond="kag.bookMarkDates[2] != void"]
-[button normal="nodata" cond="kag.bookMarkDates[2] == void"]
-[locate x=280 y=305]
-[emb exp="kag.bookMarkDates[2]" cond="kag.bookMarkDates[2] != void"]
-[emb exp="'no data'" cond="kag.bookMarkDates[2] == void"]
-[locate x=500 y=305]
-[link target=*save2]Save[endlink]
-
-[locate x=150 y=385]
-[button normal=&(kag.getBookMarkFileNameAtNum(2)) cond="kag.bookMarkDates[2] != void"]
-[button normal="nodata" cond="kag.bookMarkDates[2] == void"]
-[locate x=280 y=385]
-[emb exp="kag.bookMarkDates[2]" cond="kag.bookMarkDates[2] != void"]
-[emb exp="'no data'" cond="kag.bookMarkDates[2] == void"]
-[locate x=500 y=385]
-[link target=*save3]Save[endlink]
-
-[locate x=345 y=465]
-[link target=*rclick]返回菜单[endlink]
-
-[endnowait]
-[s]
-
-*save0
-[save place=0 ask=true]
-[jump target=*rclick]
-
-*save1
-[save place=1 ask=true]
-[jump target=*rclick]
-
-*save2
-[save place=2 ask=true]
-[jump target=*rclick]
-
-*save3
-[save place=3 ask=true]
-[jump target=*rclick]
-
-
 
 *system
-[rclick call=false enabled=false]
-[position layer=message5 page=fore frame="" left=0 top=0 width=800 height=600 marginl=0 margint=0]
-[current layer=message5]
-
+;[rclick jump=true storage="rclick.ks" target="*exit" enabled=true]
+;[position layer=message5 page=fore frame="" left=0 top=0 width=800 height=600 marginl=0 margint=0]
+[current layer=message5 page=back]
+[er]
 [nowait]
-[locate x=245 y=150]
-
 ; [current layer=5]
 ; [er]
 ; [current layer=6]
@@ -255,9 +125,11 @@
 [link target=*slow]慢速[r][endlink]
 
 [locate x=345 y=465]
-[link target=*rclick]返回菜单[endlink]
+[link target=*exit]返回游戏[endlink]
 
 [endnowait]
+[trans layer=message5 method=crossfade time=300]
+[wt]
 [s]
 
 ; *bgVolumeUp
@@ -290,26 +162,17 @@ kag.textspeed=2;
 
 
 *history
-[rclick call=false enabled=false]
-[current layer=message5]
-[er]
-[current layer=message6]
+[current layer=message5 page=fore]
 [er]
 [showhistory]
-; [locate x=345 y=465]
-; [nowait]
-; [link target=*rclick]返回菜单[endlink]
-; [endnowait]
-[jump target=*rclick]
+[jump target=*exit]
 
 *backtitle
-[rclick call=false enabled=false]
 [layopt layer=message5 page=fore visible=false]
-[layopt layer=message6 page=fore visible=false]
-[unlocksnapshot]
 ; [rclick call=true storage=rclick.ks target=*rclick]
 ; [jump storage=first.ks target=*title]
-[return storage=first.ks target=*title]
+[rclick call=false enabled=false]
+[return storage=first.ks target=*start]
 [s]
 
 *hide

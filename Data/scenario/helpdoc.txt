@@ -1,20 +1,31 @@
+----------------------最新更新-------------------
+
+        message0           标题
+        message1           人名 时间
+        message2           文字 快速按钮
+        message3           未用
+        message4           未用
+        message5           系统菜单
+        message6           设置专用
+
+
+----------------------以下为原版-------------------
+
 文字层：名称               内容
 
         message0           标题
         message1           人名
         message2           文字
-        message3           选项
+        message3           提问
         message4           button
 
 图片层：名称               内容
-
-        
 
         0                  人物立绘
         1                  证物层 
         2                  动画1      血条背景     }
                                                    } 证言开始 询问开始 门关闭
-        3                  动画2      血条         }                            
+        3                  动画2      血条         }                  
         4                  动画3      敲锤子 接受证物
         5                  动画4      证言中 反对 等下 接招 血条光标
         6                  证物层 详细
@@ -58,6 +69,10 @@ macro：名称                内容
        lvse                文字颜色
        xuetiao             显示血条
        xuetiaoyidong       扣血槽
+<<<<<<< HEAD
        xuetiaobiao         显示扣血量
 
 
+=======
+       xuetiaobiao         显示扣血量
+>>>>>>> 085734b545101553b4c2f09187415534f276985a

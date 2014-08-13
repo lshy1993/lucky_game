@@ -2,15 +2,15 @@
 
 ;初始脚本
 *select
-[cm]
+[ct]
 [wait time=600]
 [bg storage=bgi05 time=1000]
 [fg storage=gya1 layer=1 time=600]
 [m4]
 [locate x=312 y=271]
-[button layer=1 normal=mission1 hint=开始游戏 storage=shijian.ks target=*0001 clickse=14]
+[button normal=mission1 hint=开始游戏 storage=shijian.ks target=*0001 clickse=14]
 [locate x=504 y=282]
-[button layer=1 normal=right1 on=right2 hint=下一章 target=*select1 clickse=16 exp="f.style=0"]
+[button normal=right1 on=right2 hint=下一章 target=*select1 clickse=16 exp="f.style=0"]
 [s]
 
 ;第一章 梦之逆转
