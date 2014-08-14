@@ -40,11 +40,19 @@ stayontop=0
 
 [console]
 autoshowonerror=0
+<<<<<<< HEAD
 left=765
 top=168
 width=515
 height=389
 exprhist=f.hpbar@-@*jump@-@*[jump target=*0038]@-@*[exp jump target=*0038]@-@*@-@*
+=======
+left=559
+top=484
+width=698
+height=365
+exprhist=f.hpbar@-@*jump@-@*[jump target=*0038]@-@*[exp jump target=*0038]@-@*name@-@*text@-@*image@-@*addEvidence@-@*addEvidence()@-@*addEvidence(name, text, image)@-@*addEvidence("律师徽章", "律师徽章", "evidence.png")@-@*f.arrEvidence.count@-@*@-@*
+>>>>>>> 3431870e6afd72edb6a5a02a040068f6eef81700
 stayontop=0
 font=pEpPpPpPaAaAaAaAaAaAaAaAaAaAaAaAjAaBaAaAaAaAaAiGaAaAaAaAmLmOmMoFaAaAaAaAaAaAaAaAaAaAaAaAaAaAaAaAaAaAaAaAaAaAaAaAaAaAaAaA
 
