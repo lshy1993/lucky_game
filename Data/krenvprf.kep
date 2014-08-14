@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 [controller]
 left=639
 top=78
@@ -32,8 +31,8 @@ col1width=400
 stayontop=0
 exprlist=f.证据数目@-@*f.人物数目@-@*f.证据@-@*f.证词@-@*f.威慑@-@*f.证词编号@-@*f.dictEvidence@-@*f.openAdd1ForChap3DiaoCha01@-@*f.openAdd2ForChap3DiaoCha01@-@*f.进入过教室@-@*kag.fore.messages[1].visible@-@*f.temp1@-@*
 interval=1000
-
 =======
+
 [controller]
 left=921
 top=46
@@ -67,5 +66,5 @@ col1width=400
 stayontop=0
 exprlist=kag.fore.messages[5].visible@-@*kag.fore.messages[2].visible@-@*kag.back.messages[5].visible@-@*f.helpinfo@-@*
 interval=1000
-
 >>>>>>> 085734b545101553b4c2f09187415534f276985a
+
