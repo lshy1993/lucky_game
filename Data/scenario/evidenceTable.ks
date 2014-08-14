@@ -1,12 +1,26 @@
 *evidence0
 [iscript]
-var name = "寰嬪笀寰界珷";
-var text = "璇佹嵁娴嬭瘯";
+var name = "律师徽章";
+var text = "证据测试";
 var image = "evidence1.png";    
 addEvidence(name, text, image);
-// evidence = new Evidence( name, text, image);
-// var evidence = %[ "name" => name, "text" => text, "image" => image];
-// addEvidenceFromDict(evidence);
 [endscript]
 [return]
 
+*evidence1
+[iscript]
+var name = "解剖报告";
+var text = "尸体的解剖报告";
+var image = "evidence2.png";
+addEvidence(name, text, image);
+[endscript]
+[return]
+
+*evidence2
+[iscript]
+var name = "现场照片";
+var text = "现场照片";
+var image = "evidence3.png";
+addEvidence(name, text, image);
+[endscript]
+[return]

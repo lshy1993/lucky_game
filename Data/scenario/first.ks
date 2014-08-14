@@ -5155,21 +5155,23 @@ JUST THE END是什么意思？[p]
 [position layer=message2 page=fore frame="" opacity=0 left=20 top=480 width=640 height=108 marginl=25 margint=5]
 
 ; entrance of evidence system
+[eval exp="f.arrEvidence = new Array()"]
 [call storage=evidenceSys.ks target=*setEvidence]
 [call storage=evidenceTable.ks target=*evidence0]
-; [eval exp="f.arrEvidence = %[]"]
-[eval exp="f.arrEvidence = new Array()"]
+[call storage=evidenceTable.ks target=*evidence1]
+[call storage=evidenceTable.ks target=*evidence2]
+; [eval exp="addEvidence(name, text, image)"]
+; [eval exp="f.arrEvidence = %[]"] 
 ; [eval exp="f.arrEvidence.clear"]
+; [eval exp="addEvidence(name, text, image)"]
 ; [eval exp="f.arrEvidence.add(%["name" => name, "text" => text, "image" => image])"]
-
-
 
 
 
 [eval exp="f.charaName = %[]"]
 [eval exp="f.hpBar = 5"]
 [eval exp="f.matta = %[]"]
-;matta is japanese pronounciation, which means threating people 
+;matta is japanese pronounciation, which means threat people 
 
 
 
