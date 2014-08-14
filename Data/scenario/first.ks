@@ -5156,11 +5156,15 @@ JUST THE END是什么意思？[p]
 
 ; entrance of evidence system
 <<<<<<< HEAD
+<<<<<<< HEAD
 
+=======
+>>>>>>> f8d0fa432f38ba8085af4f2cf5fce8908e694755
 [eval exp="f.arrEvidence = new Array()"]
 [call storage=evidenceSys.ks target=*setEvidence]
 [call storage=evidenceTable.ks target=*evidence0]
 ; [eval exp="f.arrEvidence = %[]"]
+<<<<<<< HEAD
 =======
 [eval exp="f.arrEvidence = new Array()"]
 [call storage=evidenceSys.ks target=*setEvidence]
@@ -5170,6 +5174,8 @@ JUST THE END是什么意思？[p]
 ; [eval exp="addEvidence(name, text, image)"]
 ; [eval exp="f.arrEvidence = %[]"] 
 >>>>>>> 3431870e6afd72edb6a5a02a040068f6eef81700
+=======
+>>>>>>> f8d0fa432f38ba8085af4f2cf5fce8908e694755
 ; [eval exp="f.arrEvidence.clear"]
 ; [eval exp="addEvidence(name, text, image)"]
 ; [eval exp="f.arrEvidence.add(%["name" => name, "text" => text, "image" => image])"]
