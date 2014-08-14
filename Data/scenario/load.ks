@@ -57,7 +57,7 @@
 
 *exit
 [rclick enabled=false]
-[position layer=message5 visible=false page=back frame="" opacity=0 left=0 top=0 width=800 height=600 marginl=0 margint=0]
+[position layer=message5 visible=true page=back frame="" opacity=0 left=0 top=0 width=800 height=600 marginl=0 margint=0]
 [trans layer=message5 method=crossfade time=500]
 [wt]
 [if exp="f.backtotitle"]
