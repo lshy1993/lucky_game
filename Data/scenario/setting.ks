@@ -265,6 +265,7 @@ function modeover(d){
 [endnowait]
 [trans layer=message5 method=crossfade time=500]
 [wt]
+[layopt layer=message6 visible=true]
 [s]
 
 *update
@@ -275,12 +276,6 @@ function modeover(d){
 [s]
 
 *exit
-<<<<<<< HEAD
-[current layer=message5]
-[er]
-[layopt layer=message6 page=fore visible=false]
-=======
->>>>>>> 784e8a3540f354dd512d621bde8ae7a26a81f129
 [rclick enabled=false]
 [layopt layer=message6 page=fore visible=false]
 [current layer=message5 page=fore withback=true]

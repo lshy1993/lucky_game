@@ -221,65 +221,6 @@
 [move layer=message1 time=500 path=(0,300,255)(0,640,0)]
 [wm]
 @jump storage=first.ks target=*Chap3_0001
-; [cl all]
-; [position layer=message2 frame="time" visible="true" left=20 top=475 width=640 height=108 marginl=165 margint=15 page=back]
-; [trans method=crossfade time=1000]
-; [wt]
-; [wait time=200]
-; [m2]
-; [font_green]
-
-; @dazi
-; 5
-; @dazi
-; 月
-; @dazi
-; 2
-; @dazi
-; 2
-; @dazi
-; 日   
-; @dazi
-; 上
-; @dazi
-; 午   
-; @dazi
-; 7
-; @dazi
-; 时
-; @dazi
-; 4
-; @dazi
-; 5
-; @dazi
-; 分[r]
-      
-; @dazi
-; 李
-; @dazi
-; 云
-; @dazi
-; 萧
-; @dazi
-; 的
-; @dazi
-; 寝
-; @dazi
-; 室
-; [p]
-; [typingstart]
-; 5月22日
-; [typingend]
-;    [typingstart]上午8时45分[typingend][r]
-        
-; [typingstart]
-; 李云萧的寝室
-; [typingend]
-; [p]
-; [position layer=message2 page=fore frame="" opacity=0 left=20 top=480 width=640 height=108 marginl=25 margint=5]
-; [layopt layer=message5 visible=false]
-; [wait time=2000]
-
 
 *Chap3_time_02
 [cm]
