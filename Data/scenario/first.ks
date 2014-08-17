@@ -1528,7 +1528,8 @@
 [font_orange]
 （这两个人绝对是好人，我敢保证。）[p]
 不好，再不去就要迟到了。[p]
-[jump storage=shijian.ks target=*0004]
+[jump storage=xunwen.ks target=*new_xun1]
+;[jump storage=shijian.ks target=*0004]
 
 *0034
 [rclick call=true storage="rclick.ks" target="*rclick" enabled=true]

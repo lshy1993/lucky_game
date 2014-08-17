@@ -86,7 +86,7 @@ width=515
 height=389
 exprhist=f.hpbar@-@*jump@-@*[jump target=*0038]@-@*[exp jump target=*0038]@-@*"name"="name"@-@*"name"=="name"@-@*2 == 3@-@*"123" == "321"@-@*f.sizeOfImageList@-@*f.pictureCounter@-@*@-@*
 stayontop=0
-font=pEpPpPpPaAaAaAaAaAaAaAaAaAaAaAaAjAaBaAaAaAaAaAiGaAaAaAaAmLmOmMoFaAjNaBaCkIjNaBaCnIpLdDaAoNnImDhLoApLdDaAbIaAaAaApApLdDaA
+font=pEpPpPpPaAaAaAaAaAaAaAaAaAaAaAaAjAaBaAaAaAaAaAiGaAaAaAaAmLmOmMoFaAaAaAaAaAaAaAaAaAaAaAaAaAaAaAaAaAaAaAaAaAaAaAaAaAaAaAaA
 
 [script editor]
 left=653

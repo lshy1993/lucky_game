@@ -1134,3 +1134,23 @@
 
 
 ;;;;;new chapter2;;;;;;
+*new_xun1
+[layopt layer=message1 visible=false]
+[layopt layer=message2 visible=false]
+[cm]
+[bg storage=black time=400]
+[wt]
+[bg storage=bgs time=600]
+[ani3]
+;[position layer=message3 frame="diatext" page=fore visible=true left=60 top=475 width=680 height=110 marginl=25 margint=10]
+;[layopt layer=message3 page=fore visible=true]
+[setbotton2]
+[current layer=message3 page=fore]
+[nowait]
+[style align=center]
+[font_orange]
+¡«»³ÒÉµÄÀíÓÉ 1¡«[p]
+[endnowait]
+[style align=left]
+[playbgm storage="queslow3"]
+[hpbar]
