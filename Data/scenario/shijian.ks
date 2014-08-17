@@ -257,9 +257,6 @@
 @jump storage=first.ks target=*Chap3_0003
 
 *Chap3_time_04
-[position layer=message2 page=fore frame="" opacity=0 left=20 top=480 width=640 height=108 marginl=25 margint=5]
-[layopt layer=message5 visible=false]
-[wait time=2000]
 [cm]
 [layopt layer=message2 visible=false]
 [rclick enabled=false]

@@ -69,13 +69,13 @@ function addEvidenceFromDict( evidence){
 
 ; button
 [locate x=175 y=100]
-[button layer=6 normal=bt_l3 on=bt_l4 target=*clickLeft]
+[button normal=bt_l3 on=bt_l4 target=*clickLeft]
 [locate x=300 y=200]
 [eval exp="f.sizeOfImageList = f.arrEvidence[f.eviCounter].imageList.count"]
-[button layer=6 normal=&'f.arrEvidence[f.eviCounter].imageList[0]' cond="f.sizeOfImageList == 1"]
-[button layer=6 normal=&'f.arrEvidence[f.eviCounter].imageList[0]' cond="f.sizeOfImageList > 1" target=*initDisplayBigPicture]
+[button normal=&'f.arrEvidence[f.eviCounter].imageList[0]' cond="f.sizeOfImageList == 1"]
+[button normal=&'f.arrEvidence[f.eviCounter].imageList[0]' cond="f.sizeOfImageList > 1" target=*initDisplayBigPicture]
 [locate x=575 y=100]
-[button layer=6 normal=bt_r3 on=bt_r4 target=*clickRight]
+[button normal=bt_r3 on=bt_r4 target=*clickRight]
 
 ; text
 [font_white]
