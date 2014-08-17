@@ -16,7 +16,7 @@
 ;; Status: 
 ;; Table of Contents: 
 ;; 
-;;     Update #: 37
+;;     Update #: 92
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 ; Code:
@@ -71,8 +71,9 @@ function addEvidenceFromDict( evidence){
 [locate x=175 y=100]
 [button layer=6 normal=bt_l3 on=bt_l4 target=*clickLeft]
 [locate x=300 y=200]
-[button layer=6 normal=&'f.arrEvidence[f.eviCounter].imageList[0]' cond="f.arrEvidence[f.eviCounter].imageList.Count == 1"]
-[button layer=6 normal=&'f.arrEvidence[f.eviCounter].imageList[0]' cond="f.arrEvidence[f.eviCounter].imageList.Count > 1" target=*displayBigPicture]
+[eval exp="f.sizeOfImageList = f.arrEvidence[f.eviCounter].imageList.count"]
+[button layer=6 normal=&'f.arrEvidence[f.eviCounter].imageList[0]' cond="f.sizeOfImageList == 1"]
+[button layer=6 normal=&'f.arrEvidence[f.eviCounter].imageList[0]' cond="f.sizeOfImageList > 1" target=*initDisplayBigPicture]
 [locate x=575 y=100]
 [button layer=6 normal=bt_r3 on=bt_r4 target=*clickRight]
 
@@ -86,8 +87,9 @@ function addEvidenceFromDict( evidence){
 [s]
 
 *clickLeft
+[eval exp="f.eviCounter = f.arrEvidence.count" cond="f.eviCounter == 0"]
 [eval exp="f.eviCounter--" cond="f.eviCounter > 0"]
-[eval exp="f.eviCounter = f.arrEvidence.count - 1" cond="f.eviCounter == 0"]
+
 [jump target=*displayEvidence]
 
 *clickRight
@@ -96,9 +98,20 @@ function addEvidenceFromDict( evidence){
 [jump target=*displayEvidence]
 
 
-*displayBigPicture
-[rclick jump=true target=*exit enabled=true]
-[eval exp="f.eviCounter=0"]
-[position layer=message5 visible=true page=back frame="" opacity=0 left=0 top=0 width=800 height=600 marginl=0 margint=0]
+*initDisplayBigPicture
+[eval exp="f.pictureCounter = 1"]
+;[rclick enabled=false]
 
+*displayBigPicture
+[position page=fore visible=true top=0 left=0 marginl=0 margint=0 position layer=message6 ]
+[current layer=message6]
+; if not the end of image list
+[button cond="f.pictureCounter < f.sizeOfImageList - 1" normal=&"f.arrEvidence[f.eviCounter].imageList[f.pictureCounter]" target=*SwitchPicture]
+; if at the end of List
+[button cond="f.pictureCounter == f.sizeOfImageList - 1" normal=&"f.arrEvidence[f.eviCounter].imageList[f.pictureCounter]" target=*displayEvidence]
+[s]
+
+*SwitchPicture
+[eval exp="f.pictureCounter++"]
+[jump target=*displayBigPicture]
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;

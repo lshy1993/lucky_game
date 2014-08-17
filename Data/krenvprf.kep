@@ -84,9 +84,9 @@ left=741
 top=175
 width=515
 height=389
-exprhist=f.hpbar@-@*jump@-@*[jump target=*0038]@-@*[exp jump target=*0038]@-@*"name"="name"@-@*"name"=="name"@-@*2 == 3@-@*"123" == "321"@-@*@-@*
+exprhist=f.hpbar@-@*jump@-@*[jump target=*0038]@-@*[exp jump target=*0038]@-@*"name"="name"@-@*"name"=="name"@-@*2 == 3@-@*"123" == "321"@-@*f.sizeOfImageList@-@*f.pictureCounter@-@*@-@*
 stayontop=0
-font=pEpPpPpPaAaAaAaAaAaAaAaAaAaAaAaAjAaBaAaAaAaAaAiGaAaAaAaAmLmOmMoFaAaAaAaAaAaAaAaAaAaAaAaAaAaAaAaAaAaAaAaAaAaAaAaAaAaAaAaA
+font=pEpPpPpPaAaAaAaAaAaAaAaAaAaAaAaAjAaBaAaAaAaAaAiGaAaAaAaAmLmOmMoFaAjNaBaCkIjNaBaCnIpLdDaAoNnImDhLoApLdDaAbIaAaAaApApLdDaA
 
 [script editor]
 left=653
@@ -104,7 +104,7 @@ height=223
 col0width=140
 col1width=400
 stayontop=0
-exprlist=kag.fore.messages[5].visible@-@*kag.fore.messages[2].visible@-@*kag.back.messages[5].visible@-@*f.helpinfo@-@*
+exprlist=kag.fore.messages[5].visible@-@*kag.fore.messages[2].visible@-@*kag.back.messages[5].visible@-@*f.helpinfo@-@*f.eviCounter@-@*
 interval=1000
 >>>>>>> 085734b545101553b4c2f09187415534f276985a
 >>>>>>> f8d0fa432f38ba8085af4f2cf5fce8908e694755
