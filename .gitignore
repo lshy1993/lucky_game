@@ -1,0 +1,14 @@
+# ignore all savedata
+savedata/
+
+# ignore changelog
+krkr.exe.console.log
+
+# ignore rpf
+default.rpf
+
+# ignore temp file
+.*~
+# ignore emacs temp file
+\#.*\#
+
