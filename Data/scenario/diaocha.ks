@@ -385,6 +385,7 @@
 
 
 *Chap3_diaocha01_关于书法社
+
 [cm]
 [displayInfor renming=李云萧]这里是书法社吧。那么书法社是个怎样的社团呢？[p]
 [displayInfor renming=喵星人]写字的呗。[p]
@@ -684,6 +685,11 @@
 
 *Chap03_diaocha02_社团教室_fst
 ; *首次进入时地点与对话
+[rclick call=true storage="rclick.ks" target="*rclick" enabled=true]
+[position layer=message2 visible=true frame="dialog" opacity=0 left=20 top=475 width=760 height=110 marginl=25 margint=10 page=back]
+[trans method=crossfade time=1000]
+[wt]
+[position layer=message1 visible=true frame="name" opacity=0 left=20 top=435 width=140 height=40 marginl=10 margint=2]
 
 [displayInfor renming=西门吹]啊！陆白还留在教室里。[p]
 [displayInfor renming=李云萧]嗯，去找他询问下情况吧。[p]

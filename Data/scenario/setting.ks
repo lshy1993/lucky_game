@@ -2,7 +2,7 @@
 [layopt layer=message0 visible=false]
 [rclick jump=true storage=setting.ks target=*exit enabled=true]
 [iscript]
-function initialise(){
+function initialise()	{
 	sf.voice1=true;
 	sf.voice2=true;
 	sf.voice3=true;
@@ -242,7 +242,7 @@ function modeover(d){
 [locate x=140 y=365]
 [button normal=setting_font6 over=setting_font6_o onenter="f.helpinfo='全屏/窗口模式' , kag.callExtraConductor('setting.ks','*update')" onleave="f.helpinfo='', kag.callExtraConductor('setting.ks','*update')"]
 [locate x=140 y=395]
-[button normal=setting_font7 over=setting_font7_o onenter="f.helpinfo='分辨率、窗口模式大小' , kag.processCall('setting.ks','*update')" onleave="f.helpinfo='', kag.callExtraConductor('setting.ks','*update')"]
+[button normal=setting_font7 over=setting_font7_o onenter="f.helpinfo='分辨率、窗口模式大小' , kag.callExtraConductor('setting.ks','*update')" onleave="f.helpinfo='', kag.callExtraConductor('setting.ks','*update')"]
 [endnowait]
 [trans layer=message5 method=crossfade time=500]
 ;[trans layer=message6 method=crossfade time=500]
@@ -258,6 +258,8 @@ function modeover(d){
 [s]
 
 *exit
+[current layer=message5]
+[er]
 [layopt layer=message6 page=fore visible=false]
 [rclick enabled=false]
 [position layer=message5 visible=true page=back frame="" opacity=0 left=0 top=0 width=800 height=600 marginl=0 margint=0]

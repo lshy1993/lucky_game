@@ -15,7 +15,7 @@
 ;; Status: 
 ;; Table of Contents: 
 ;; 
-;;     Update #: 84
+;;     Update #: 88
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;x
 ;;Code:
@@ -5149,38 +5149,23 @@ JUST THE END是什么意思？[p]
 
 *Chap3_0001
 ;; start chapter 3
-[position layer=message1 page=back frame="message" visible=true opacity=150 left=20 top=435 width=160 height=40 marginl=10 margint=2]
+; [position layer=message1 page=back frame="message" visible=true opacity=150 left=20 top=435 width=160 height=40 marginl=10 margint=2]
+; [trans method=crossfade time=1000]
+; [wt]
+; [position layer=message2 page=fore frame="" opacity=0 left=20 top=480 width=640 height=108 marginl=25 margint=5]
+[rclick call=true storage="rclick.ks" target="*rclick" enabled=true]
+[position layer=message2 visible=true frame="dialog" opacity=0 left=20 top=475 width=760 height=110 marginl=25 margint=10 page=back]
 [trans method=crossfade time=1000]
 [wt]
-[position layer=message2 page=fore frame="" opacity=0 left=20 top=480 width=640 height=108 marginl=25 margint=5]
+[position layer=message1 visible=true frame="name" opacity=0 left=20 top=435 width=140 height=40 marginl=10 margint=2]
 
 ; entrance of evidence system
-<<<<<<< HEAD
-<<<<<<< HEAD
 
-=======
->>>>>>> f8d0fa432f38ba8085af4f2cf5fce8908e694755
-[eval exp="f.arrEvidence = new Array()"]
-[call storage=evidenceSys.ks target=*setEvidence]
-[call storage=evidenceTable.ks target=*evidence0]
-; [eval exp="f.arrEvidence = %[]"]
-<<<<<<< HEAD
-=======
 [eval exp="f.arrEvidence = new Array()"]
 [call storage=evidenceSys.ks target=*setEvidence]
 [call storage=evidenceTable.ks target=*evidence0]
 [call storage=evidenceTable.ks target=*evidence1]
 [call storage=evidenceTable.ks target=*evidence2]
-; [eval exp="addEvidence(name, text, image)"]
-; [eval exp="f.arrEvidence = %[]"] 
->>>>>>> 3431870e6afd72edb6a5a02a040068f6eef81700
-=======
->>>>>>> f8d0fa432f38ba8085af4f2cf5fce8908e694755
-; [eval exp="f.arrEvidence.clear"]
-; [eval exp="addEvidence(name, text, image)"]
-; [eval exp="f.arrEvidence.add(%["name" => name, "text" => text, "image" => image])"]
-
-
 
 [eval exp="f.charaName = %[]"]
 [eval exp="f.hpBar = 5"]
@@ -5235,6 +5220,12 @@ master未知，职阶姑且算是弓兵，[p]
 [jump storage=shijian.ks target=*Chap3_time_02]
 
 *Chap3_0002
+[rclick call=true storage="rclick.ks" target="*rclick" enabled=true]
+[position layer=message2 visible=true frame="dialog" opacity=0 left=20 top=475 width=760 height=110 marginl=25 margint=10 page=back]
+[trans method=crossfade time=1000]
+[wt]
+[position layer=message1 visible=true frame="name" opacity=0 left=20 top=435 width=140 height=40 marginl=10 margint=2]
+
 [displayInfor renming=李云萧]
 [font_blue]
 （我们学校每年的这个时间附近，由学生会组织，[p]
@@ -5264,6 +5255,12 @@ master未知，职阶姑且算是弓兵，[p]
 [s]
 
 *Chap3_0003
+[rclick call=true storage="rclick.ks" target="*rclick" enabled=true]
+[position layer=message2 visible=true frame="dialog" opacity=0 left=20 top=475 width=760 height=110 marginl=25 margint=10 page=back]
+[trans method=crossfade time=1000]
+[wt]
+[position layer=message1 visible=true frame="name" opacity=0 left=20 top=435 width=140 height=40 marginl=10 margint=2]
+
 [displayInfor renming=李云萧]
 [font_blue]
 （教学楼的1、2、3楼都是我们平时学习的地方。[p]
@@ -5314,6 +5311,12 @@ master未知，职阶姑且算是弓兵，[p]
 [jump storage=shijian.ks target=*Chap3_time_04]
 
 *Chap3_0004
+[rclick call=true storage="rclick.ks" target="*rclick" enabled=true]
+[position layer=message2 visible=true frame="dialog" opacity=0 left=20 top=475 width=760 height=110 marginl=25 margint=10 page=back]
+[trans method=crossfade time=1000]
+[wt]
+[position layer=message1 visible=true frame="name" opacity=0 left=20 top=435 width=140 height=40 marginl=10 margint=2]
+
 [cm]
 [displayInfor renming=李云萧][font_blue]（哇，美女……）[p]
 [displayInfor renming=喵星人]等一下，你是来干正事的。[p]

@@ -76,16 +76,15 @@ stayontop=0
 exprlist=kag.fore.messages[5].visible@-@*kag.fore.messages[2].visible@-@*kag.back.messages[5].visible@-@*f.helpinfo@-@*
 interval=1000
 >>>>>>> 085734b545101553b4c2f09187415534f276985a
-
 =======
 
 [console]
 autoshowonerror=0
-left=765
-top=168
+left=741
+top=175
 width=515
 height=389
-exprhist=f.hpbar@-@*jump@-@*[jump target=*0038]@-@*[exp jump target=*0038]@-@*@-@*
+exprhist=f.hpbar@-@*jump@-@*[jump target=*0038]@-@*[exp jump target=*0038]@-@*"name"="name"@-@*"name"=="name"@-@*2 == 3@-@*"123" == "321"@-@*@-@*
 stayontop=0
 font=pEpPpPpPaAaAaAaAaAaAaAaAaAaAaAaAjAaBaAaAaAaAaAiGaAaAaAaAmLmOmMoFaAaAaAaAaAaAaAaAaAaAaAaAaAaAaAaAaAaAaAaAaAaAaAaAaAaAaAaA
 
@@ -108,5 +107,5 @@ stayontop=0
 exprlist=kag.fore.messages[5].visible@-@*kag.fore.messages[2].visible@-@*kag.back.messages[5].visible@-@*f.helpinfo@-@*
 interval=1000
 >>>>>>> 085734b545101553b4c2f09187415534f276985a
-
 >>>>>>> f8d0fa432f38ba8085af4f2cf5fce8908e694755
+

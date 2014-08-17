@@ -16,7 +16,7 @@
 ;; Status: 
 ;; Table of Contents: 
 ;; 
-;;     Update #: 101
+;;     Update #: 103
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 ; Code:
@@ -74,7 +74,8 @@
 [s]
 
 *evidence
-[call storage=evidenceSys.ks target=*initDisplayEvidence]
+; [call storage=evidenceSys.ks target=*initDisplayEvidence]
+[jump storage=evidenceSys.ks target=*initDisplayEvidence]
 [s]
 
 
