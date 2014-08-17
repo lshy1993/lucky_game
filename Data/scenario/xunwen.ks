@@ -301,6 +301,8 @@
 [cm]
 [jump storage=first.ks target=*0029]
 
+;;;;;;;;chaper2-original--------
+
 *x004
 [layopt layer=message1 visible=false]
 ;[layopt layer=message4 visible=false]
@@ -1129,3 +1131,6 @@
 [font_green]
 满意了不？没我什么事情了吧。[p]
 [jump storage=first.ks target=*0102]
+
+
+;;;;;new chapter2;;;;;;
