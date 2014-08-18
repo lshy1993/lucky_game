@@ -7,49 +7,49 @@
 [nowait]
 ;;;;load1
 [locate x=40 y=20]
-[button normal=&(kag.getBookMarkFileNameAtNum(0)) target=*load0 cond="kag.bookMarkDates[0] != void"]
-[button normal="nodata" cond="kag.bookMarkDates[0] == void"]
+[button normal=&(kag.getBookMarkFileNameAtNum(1)) target=*load1 cond="kag.bookMarkDates[1] != void"]
+[button normal="nodata" cond="kag.bookMarkDates[1] == void"]
 [locate x=40 y=170]
-[emb exp="kag.bookMarkDates[0]" cond="kag.bookMarkDates[0] != void"]
+[emb exp="kag.bookMarkDates[1]" cond="kag.bookMarkDates[1] != void"]
 
 ;;;;load2
 [locate x=300 y=20]
-[button normal=&(kag.getBookMarkFileNameAtNum(1)) target=*load1 cond="kag.bookMarkDates[1] != void"]
-[button normal="nodata" cond="kag.bookMarkDates[1] == void"]
+[button normal=&(kag.getBookMarkFileNameAtNum(2)) target=*load2 cond="kag.bookMarkDates[2] != void"]
+[button normal="nodata" cond="kag.bookMarkDates[2] == void"]
 [locate x=300 y=170]
-[emb exp="kag.bookMarkDates[1]" cond="kag.bookMarkDates[1] != void"]
+[emb exp="kag.bookMarkDates[2]" cond="kag.bookMarkDates[2] != void"]
 
 ;;;;load3
 [locate x=560 y=20]
-[button normal=&(kag.getBookMarkFileNameAtNum(2)) target=*load2 cond="kag.bookMarkDates[2] != void"]
-[button normal="nodata" cond="kag.bookMarkDates[2] == void"]
+[button normal=&(kag.getBookMarkFileNameAtNum(3)) target=*load3 cond="kag.bookMarkDates[3] != void"]
+[button normal="nodata" cond="kag.bookMarkDates[3] == void"]
 [locate x=560 y=170]
-[emb exp="kag.bookMarkDates[2]" cond="kag.bookMarkDates[2] != void"]
+[emb exp="kag.bookMarkDates[3]" cond="kag.bookMarkDates[3] != void"]
 
 ;;;;load4
 [locate x=40 y=400]
-[button normal=&(kag.getBookMarkFileNameAtNum(3)) target=*load3 cond="kag.bookMarkDates[3] != void"]
-[button normal="nodata" cond="kag.bookMarkDates[3] == void"]
+[button normal=&(kag.getBookMarkFileNameAtNum(4)) target=*load4 cond="kag.bookMarkDates[4] != void"]
+[button normal="nodata" cond="kag.bookMarkDates[4] == void"]
 [locate x=40 y=550]
-[emb exp="kag.bookMarkDates[3]" cond="kag.bookMarkDates[3] != void"]
+[emb exp="kag.bookMarkDates[4]" cond="kag.bookMarkDates[4] != void"]
 
 ;;;;load5
 [locate x=300 y=400]
-[button normal=&(kag.getBookMarkFileNameAtNum(4)) target=*load4 cond="kag.bookMarkDates[4] != void"]
-[button normal="nodata" cond="kag.bookMarkDates[4] == void"]
+[button normal=&(kag.getBookMarkFileNameAtNum(5)) target=*load5 cond="kag.bookMarkDates[5] != void"]
+[button normal="nodata" cond="kag.bookMarkDates[5] == void"]
 [locate x=300 y=550]
-[emb exp="kag.bookMarkDates[4]" cond="kag.bookMarkDates[4] != void"]
+[emb exp="kag.bookMarkDates[5]" cond="kag.bookMarkDates[5] != void"]
 
 ;;;;load6
 [locate x=560 y=400]
-[button normal=&(kag.getBookMarkFileNameAtNum(5)) target=*load5 cond="kag.bookMarkDates[5] != void"]
-[button normal="nodata" cond="kag.bookMarkDates[5] == void"]
+[button normal=&(kag.getBookMarkFileNameAtNum(6)) target=*load6 cond="kag.bookMarkDates[6] != void"]
+[button normal="nodata" cond="kag.bookMarkDates[6] == void"]
 [locate x=560 y=550]
-[emb exp="kag.bookMarkDates[5]" cond="kag.bookMarkDates[5] != void"]
+[emb exp="kag.bookMarkDates[6]" cond="kag.bookMarkDates[6] != void"]
 
 ;;;;
 [locate x=175 y=240]
-[button normal=font_load over=font_load_o hint=?? target=*exit]
+[button normal=font_load over=font_load_o hint="·µ»Ø" target=*exit]
 [endnowait]
 [trans layer=message5 method=crossfade time=500]
 [wt]
@@ -66,10 +66,6 @@
 [else]
 [jump storage=rclick.ks target=*exit]
 [endif]
-
-*load0
-[load place=0 ask=true]
-[jump target=*load]
 
 *load1
 [load place=1 ask=true]
@@ -89,4 +85,8 @@
 
 *load5
 [load place=5 ask=true]
+[jump target=*load]
+
+*load6
+[load place=6 ask=true]
 [jump target=*load]

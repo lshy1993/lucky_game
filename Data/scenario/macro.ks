@@ -31,12 +31,12 @@
 @macro name=setbotton
 [position layer=message2 visible=true frame="dialog" left=20 top=475 width=760 height=110 marginl=25 margint=10 page=back]
 [current layer=message2 page=back]
-[sysbutton name=close x=645 y=5 normal=qfun1_n over=qfun1_o exp="kag.callExtraConductor('rclick.ks', '*hide')"]
+[sysbutton name=close x=645 y=5 normal=qfun1_n over=qfun1_o exp="kag.callExtraConductor('rclick.ks','*hide')"]
 [sysbutton name=auto x=649 y=25 normal=qfun2_n over=qfun2_o exp="kag.enterAutoMode()"]
-[sysbutton name=menu x=649 y=45 normal=qfun3_n over=qfun3_o exp="kag.callExtraConductor('rclick.ks', '*rclick')"]
-[sysbutton name=qsave x=651 y=65 normal=qfun4_n over=qfun4_o exp=""]
-[sysbutton name=qload x=653 y=85 normal=qfun5_n over=qfun5_o exp=""]
-[sysbutton name=evidence x=705 y=3 normal=option_n over=option_o exp=""]
+[sysbutton name=menu x=649 y=45 normal=qfun3_n over=qfun3_o exp="kag.callExtraConductor('rclick.ks','*rclick')"]
+[sysbutton name=qsave x=651 y=65 normal=qfun4_n over=qfun4_o exp="kag.saveBookMarkWithAsk(0)"]
+[sysbutton name=qload x=653 y=85 normal=qfun5_n over=qfun5_o exp="kag.loadBookMarkWithAsk(0)"]
+[sysbutton name=evidence x=705 y=3 normal=option_n over=option_o exp="kag.callExtraConductor('evidenceSys.ks','*initDisplayEvidence')"]
 @endmacro
 
 @macro name=setbotton2
@@ -44,9 +44,9 @@
 [current layer=message3 page=fore]
 [sysbutton name=dclose x=720 y=470 normal=qfun7_n over=qfun7_o exp="kag.callExtraConductor('rclick.ks', '*hide')"]
 [sysbutton name=dmenu x=110 y=470 normal=qfun3_n over=qfun3_o exp="kag.callExtraConductor('rclick.ks', '*rclick')"]
-[sysbutton name=dqsave x=270 y=470 normal=qfun4_n over=qfun4_o exp=""]
-[sysbutton name=dqload x=430 y=470 normal=qfun5_n over=qfun5_o exp=""]
-[sysbutton name=devidence x=580 y=470 normal=qfun6_n over=qfun6_o exp=""]
+[sysbutton name=dqsave x=270 y=470 normal=qfun4_n over=qfun4_o exp="kag.saveBookMarkWithAsk(0)"]
+[sysbutton name=dqload x=430 y=470 normal=qfun5_n over=qfun5_o exp="kag.loadBookMarkWithAsk(0)"]
+;[sysbutton name=devidence x=580 y=470 normal=qfun6_n over=qfun6_o exp=""]
 [sysbutton name=prev x=20 y=490 graphic=pre exp=""]
 [sysbutton name=next x=750 y=490 graphic=next exp=""]
 [sysbutton name=weishe x=0 y=0 graphic=tbut1 exp=""]
