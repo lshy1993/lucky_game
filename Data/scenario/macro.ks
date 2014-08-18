@@ -19,10 +19,11 @@
 ;[else]
 ;[eval exp="kag.fore.messages[2].buttons.auto.loadButtons('qfun2_n', 'qfun2_o', 'qfun2_n')"]
 ;[endif]
+[layopt layer=message1 page=fore visible=true]
 [current layer=message1 page=fore withback=ture]
 [er][nowait]¡¾[ch text=%renming]¡¿[endnowait]
-[wait time=300]
-;[layopt layer=message2 page=fore visible=true]
+;[wait time=300]
+[layopt layer=message2 page=fore visible=true]
 [current layer=message2 page=fore withback=ture]
 [er]
 @endmacro
@@ -40,17 +41,20 @@
 @endmacro
 
 @macro name=setbotton2
-[position layer=message3 visible=true frame="diatext" left=0 top=0 width=800 height=600 marginl=25 margint=495 page=fore]
+[position layer=message3 visible=true frame="diatext" left=0 top=0 width=800 height=600 marginl=85 marginr=85 margint=500 page=fore]
 [current layer=message3 page=fore]
 [sysbutton name=dclose x=720 y=470 normal=qfun7_n over=qfun7_o exp="kag.callExtraConductor('rclick.ks', '*hide')"]
 [sysbutton name=dmenu x=110 y=470 normal=qfun3_n over=qfun3_o exp="kag.callExtraConductor('rclick.ks', '*rclick')"]
 [sysbutton name=dqsave x=270 y=470 normal=qfun4_n over=qfun4_o exp="kag.saveBookMarkWithAsk(0)"]
 [sysbutton name=dqload x=430 y=470 normal=qfun5_n over=qfun5_o exp="kag.loadBookMarkWithAsk(0)"]
-;[sysbutton name=devidence x=580 y=470 normal=qfun6_n over=qfun6_o exp=""]
-[sysbutton name=prev x=20 y=490 graphic=pre exp=""]
-[sysbutton name=next x=750 y=490 graphic=next exp=""]
-[sysbutton name=weishe x=0 y=0 graphic=tbut1 exp=""]
+[sysbutton name=devidence x=580 y=470 normal=qfun6_n over=qfun6_o exp=""]
+[sysbutton name=prev x=20 y=490 graphic=pre exp="kag.processCall('xunwen.ks', '*prev')"]
+[sysbutton name=next x=750 y=490 graphic=next exp="kag.processCall('xunwen.ks', '*next')"]
+[sysbutton name=weishe x=0 y=0 graphic=tbut1 exp="kag.processCall('xunwen.ks', '*matta')"]
 [sysbutton name=zhizheng x=680 y=0 graphic=tbut2 exp=""]
+[sysbutton name=hpbar x=360 y=6 normal=hpbar]
+[sysbutton name=hp x=381 y=8 normal=hp]
+[sysbutton name=mp x=381 y=28 normal=mp]
 @endmacro
 
 @macro name=m3

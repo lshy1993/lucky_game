@@ -1133,24 +1133,293 @@
 [jump storage=first.ks target=*0102]
 
 
-;;;;;new chapter2;;;;;;
-*new_xun1
-[layopt layer=message1 visible=false]
-[layopt layer=message2 visible=false]
+;;;;;new chapter2 alpha;;;;;;
+*init_enquire
+[eval exp="f.arrEnquire = new Array()"]
+[iscript]
+function addEnquire(text, visible, jump, end){
+    f.arrEnquire.add(%[ "text" => text, "visible" => visible, "jump" => jump, "end" => end]);
+}
+f.enquire = '*new_' + f.enquire;
+[endscript]
+[jump target=&"f.enquire"]
+
+*new_x004
+[iscript]
+var text = "看，这个是被害人身旁掉落的白纸，\n白纸的背面留有用血写的名字。";
+var visible = true;
+var jump = "*0043";
+var end = "";
+addEnquire( text, visible, jump, end);
+var text = "这是被害者留下的讯息，它告发了凶手。";
+var visible = true;
+var jump= "*0044";
+var end = "";
+addEnquire( text, visible, jump, end);
+var text = "被害人用右手食指写下了凶手的名字。";
+var visible = true;
+var jump= "*0045";
+var end = "";
+addEnquire( text, visible, jump, end);
+var text = "难道说，这讯息有什么问题么？";
+var visible = true;
+var jump= "*0046";
+var end = "*0042";
+addEnquire( text, visible, jump, end);
+f.enquiretitle="～怀疑的理由 1～";
+[endscript]
+[jump target=*start_enquire]
+
+*new_x005
+[iscript]
+var text = "在地上有一个掉落的笔筒，\n笔筒上沾有被害人的血迹。";
+var visible = true;
+var jump = "*0050";
+var end = "";
+addEnquire( text, visible, jump, end);
+var text = "这个一定就是凶器了，\n它的质量足以砸死一人。";
+var visible = true;
+var jump= "*0051";
+var end = "";
+addEnquire( text, visible, jump, end);
+var text = "笔筒上发现了奇怪的指纹，\n经过确认，就是叶亭风的指纹。";
+var visible = true;
+var jump= "*0052";
+var end = "";
+addEnquire( text, visible, jump, end);
+var text = "明显，是他拿起了笔筒砸向被害人，\n就这样留下了右手的指纹。";
+var visible = true;
+var jump= "*0053";
+var end = "*0049";
+addEnquire( text, visible, jump, end);
+f.enquiretitle="～怀疑的理由 2～";
+[endscript]
+[jump target=*start_enquire]
+
+*new_x006
+[iscript]
+var text = "今天我去办公室找老师，先透过窗看了看，\n但是却没有在位子上看到老师。";
+var visible = true;
+var jump = "*0058";
+var end = "";
+addEnquire( text, visible, jump, end);
+var text = "我正想离开，突然发现门居然是开着的。";
+var visible = true;
+var jump= "*0059";
+var end = "";
+addEnquire( text, visible, jump, end);
+var text = "于是我推门进去，看到老师倒在了地上。";
+var visible = true;
+var jump= "*0060";
+var end = "";
+addEnquire( text, visible, jump, end);
+var text = "我走近老师身边，发现老师的头上都是血。";
+var visible = true;
+var jump= "*0061";
+var end = "";
+addEnquire( text, visible, jump, end);
+var text = "我顿时吓得愣在了那里，回过神，\n什么也没有做，就往门外走了。";
+var visible = true;
+var jump= "*0062";
+var end = "";
+addEnquire( text, visible, jump, end);
+var text = "突然有个女生大声尖叫了起来，\n我一找，发现她在门边已经晕了过去。";
+var visible = true;
+var jump= "*0063";
+var end = "";
+addEnquire( text, visible, jump, end);
+var text = "这尖叫声把你们也吸引过来了。";
+var visible = true;
+var jump= "*0064";
+var end = "*0057";
+addEnquire( text, visible, jump, end);
+f.enquiretitle="～发现尸体～";
+[endscript]
+[jump target=*start_enquire]
+
+*new_x007
+[iscript]
+var text = "我同样也是来找老师的，\n但我在门外听到里面有动静。";
+var visible = true;
+var jump = "*0071";
+var end = "";
+addEnquire( text, visible, jump, end);
+var text = "我刚开门，就看到老师和学生居然打起来了！";
+var visible = true;
+var jump = "*0072";
+var end = "";
+addEnquire( text, visible, jump, end);
+var text = "老师向门逃了过来，突然！\n向前倒在地上，就再也不动了。";
+var visible = true;
+var jump = "*0073";
+var end = "";
+addEnquire( text, visible, jump, end);
+var text = "然后那个同学恶狠狠地向我走来，\n我顿时吓得不由地尖叫了起来！";
+var visible = true;
+var jump = "*0074";
+var end = "";
+addEnquire( text, visible, jump, end);
+var text = "之后发生了什么，我就不记得了。";
+var visible = true;
+var jump = "*0075";
+var end = "";
+addEnquire( text, visible, jump, end);
+var text = "但我清楚记得那人是个西瓜头！\n没错，那个西瓜头就是他！";
+var visible = true;
+var jump = "*0076";
+var end = "*0070";
+addEnquire( text, visible, jump, end);
+f.enquiretitle="～目击到的情况 1～";
+[endscript]
+[jump target=*start_enquire]
+
+*new_x008
+[iscript]
+var text = "我、我想起来啦！\n老师他进行了反击，没有立即倒下！";
+var visible = true;
+var jump = "*0081";
+var end = "";
+addEnquire( text, visible, jump, end);
+var text = "西瓜头拿起桌上的笔筒，\n用力向老师的头砸去。";
+var visible = true;
+var jump = "*0082";
+var end = "";
+addEnquire( text, visible, jump, end);
+var text = "老师被打中后，向前踉跄了下，\n突然转过身，向西瓜头扑去。";
+var visible = true;
+var jump = "*0083";
+var end = "";
+addEnquire( text, visible, jump, end);
+var text = "不过西瓜头没有惊慌，握紧笔筒，\n对准老师的脑袋，又是一下。";
+var visible = true;
+var jump = "*0084";
+var end = "";
+addEnquire( text, visible, jump, end);
+var text = "就这样 JUST THE END。";
+var visible = true;
+var jump = "*0085";
+var end = "*0080";
+addEnquire( text, visible, jump, end);
+f.enquiretitle="～目击到的情况 2～";
+[endscript]
+[jump target=*start_enquire]
+
+*new_x009
+[iscript]
+var text = "喵~那个时候，我就在这上面一层。";
+var visible = true;
+var jump = "*0089";
+var end = "";
+addEnquire( text, visible, jump, end);
+var text = "突然，传来了一声尖叫，\n但我还有事要做，所以没有在意。";
+var visible = true;
+var jump = "*0090";
+var end = "";
+addEnquire( text, visible, jump, end);
+var text = "然后我做完该做的事情后，\n就从另一侧的楼梯下楼回教室了。";
+var visible = true;
+var jump = "*0091";
+var end = "";
+addEnquire( text, visible, jump, end);
+var text = "之后我去了一趟洗手间，一直没有回教室。";
+var visible = true;
+var jump = "*0092";
+var end = "";
+addEnquire( text, visible, jump, end);
+var text = "当我从那里出来的时候，我就看到，\n你和西门吹突然快跑着离开了。";
+var visible = true;
+var jump = "*0093";
+var end = "";
+addEnquire( text, visible, jump, end);
+var text = "因为要节省能量，所以就进教室休息了。";
+var visible = true;
+var jump = "*0094";
+var end = "*0089";
+addEnquire( text, visible, jump, end);
+f.enquiretitle="～喵星人的证言～";
+[endscript]
+[jump target=*start_enquire]
+
+*new_x010
+[iscript]
+var text = "去办公室还能有什么事情，\n当然是去找老师啦！";
+var visible = true;
+var jump = "*0103";
+var end = "";
+addEnquire( text, visible, jump, end);
+var text = "事情完了之后，自然就从办公室出来了。";
+var visible = true;
+var jump = "*0104";
+var end = "";
+addEnquire( text, visible, jump, end);
+var text = "没想到，那时候居然正好有人在录影。";
+var visible = true;
+var jump = "*0105";
+var end = "";
+addEnquire( text, visible, jump, end);
+var text = "当然，什么事情都没有，我就离开了。";
+var visible = true;
+var jump = "*0106";
+var end = "";
+addEnquire( text, visible, jump, end);
+var text = "满意了不？没我什么事情了吧。";
+var visible = true;
+var jump = "*0107";
+var end = "*0102";
+addEnquire( text, visible, jump, end);
+f.enquiretitle="～事件的解释 1～";
+[endscript]
+[jump target=*start_enquire]
+
+*start_enquire
+[layopt layer=message1 visible=false page=fore]
+[layopt layer=message2 visible=false page=fore]
 [cm]
 [bg storage=black time=400]
 [wt]
 [bg storage=bgs time=600]
+[position layer=message3 visible=true frame="diatext" left=0 top=0 width=800 height=600 marginl=85 marginr=85 margint=500 page=fore]
 [ani3]
-;[position layer=message3 frame="diatext" page=fore visible=true left=60 top=475 width=680 height=110 marginl=25 margint=10]
-;[layopt layer=message3 page=fore visible=true]
-[setbotton2]
 [current layer=message3 page=fore]
 [nowait]
 [style align=center]
 [font_orange]
-～怀疑的理由 1～[p]
+[emb exp="f.enquiretitle"][p]
 [endnowait]
 [style align=left]
+[setbotton2]
+[eval exp="f.textCounter=0"]
 [playbgm storage="queslow3"]
 [hpbar]
+
+*refresh
+[layopt layer=message3 page=fore visible=true]
+[current layer=message3 page=fore]
+[er]
+[font_green]
+[emb exp="f.arrEnquire[f.textCounter].text"]
+[p]
+[jump target=*next]
+
+*next
+[if exp="f.arrEnquire[f.textCounter].end != ''"]
+[layopt layer=message3 page=fore visible=false]
+;[layopt layer=message1 page=fore visible=true]
+;[layopt layer=message2 page=fore visible=true]
+[jump storage=first.ks target=&"f.arrEnquire[f.textCounter].end"]
+[else]
+[eval exp="f.textCounter++"]
+[jump target=*refresh]
+[endif]
+
+*matta
+[layopt layer=message3 page=fore visible=false]
+;[layopt layer=message1 page=fore visible=true]
+;[layopt layer=message2 page=fore visible=true]
+[jump storage=first.ks target=&"f.arrEnquire[f.textCounter].jump"]
+
+*prev
+[if exp="f.textCounter != 0"]
+[eval exp="f.textCounter--"]
+[jump target=*refresh]
+[endif]
