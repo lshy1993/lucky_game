@@ -1166,7 +1166,8 @@ var visible = true;
 var jump= "*0046";
 var end = "*0042";
 addEnquire( text, visible, jump, end);
-f.enquiretitle="～怀疑的理由 1～";
+f.enquireCounter="4";
+f.enquireTitle="～怀疑的理由 1～";
 [endscript]
 [jump target=*start_enquire]
 
@@ -1192,7 +1193,8 @@ var visible = true;
 var jump= "*0053";
 var end = "*0049";
 addEnquire( text, visible, jump, end);
-f.enquiretitle="～怀疑的理由 2～";
+f.enquireCounter="5";
+f.enquireTitle="～怀疑的理由 2～";
 [endscript]
 [jump target=*start_enquire]
 
@@ -1233,7 +1235,8 @@ var visible = true;
 var jump= "*0064";
 var end = "*0057";
 addEnquire( text, visible, jump, end);
-f.enquiretitle="～发现尸体～";
+f.enquireCounter="6";
+f.enquireTitle="～发现尸体～";
 [endscript]
 [jump target=*start_enquire]
 
@@ -1269,7 +1272,8 @@ var visible = true;
 var jump = "*0076";
 var end = "*0070";
 addEnquire( text, visible, jump, end);
-f.enquiretitle="～目击到的情况 1～";
+f.enquireCounter="7";
+f.enquireTitle="～目击到的情况 1～";
 [endscript]
 [jump target=*start_enquire]
 
@@ -1300,7 +1304,8 @@ var visible = true;
 var jump = "*0085";
 var end = "*0080";
 addEnquire( text, visible, jump, end);
-f.enquiretitle="～目击到的情况 2～";
+f.enquireCounter="8";
+f.enquireTitle="～目击到的情况 2～";
 [endscript]
 [jump target=*start_enquire]
 
@@ -1336,7 +1341,8 @@ var visible = true;
 var jump = "*0094";
 var end = "*0089";
 addEnquire( text, visible, jump, end);
-f.enquiretitle="～喵星人的证言～";
+f.enquireCounter="9";
+f.enquireTitle="～喵星人的证言～";
 [endscript]
 [jump target=*start_enquire]
 
@@ -1367,7 +1373,8 @@ var visible = true;
 var jump = "*0107";
 var end = "*0102";
 addEnquire( text, visible, jump, end);
-f.enquiretitle="～事件的解释 1～";
+f.enquireCounter="10";
+f.enquireTitle="～事件的解释 1～";
 [endscript]
 [jump target=*start_enquire]
 
@@ -1384,12 +1391,12 @@ f.enquiretitle="～事件的解释 1～";
 [nowait]
 [style align=center]
 [font_orange]
-[emb exp="f.enquiretitle"][p]
+[emb exp="f.enquireTitle"][p]
 [endnowait]
 [style align=left]
 [setbotton2]
 [eval exp="f.textCounter=0"]
-[playbgm storage="queslow3"]
+[playbgm storage=&f.playbgm]
 [hpbar]
 
 *refresh
@@ -1404,13 +1411,19 @@ f.enquiretitle="～事件的解释 1～";
 *next
 [if exp="f.arrEnquire[f.textCounter].end != ''"]
 [layopt layer=message3 page=fore visible=false]
-;[layopt layer=message1 page=fore visible=true]
-;[layopt layer=message2 page=fore visible=true]
 [jump storage=first.ks target=&"f.arrEnquire[f.textCounter].end"]
 [else]
 [eval exp="f.textCounter++"]
+[eval exp="f.textCounter++" cond="!f.arrEnquire[f.textCounter].visible"]
 [jump target=*refresh]
 [endif]
+
+*prev
+[if exp="f.textCounter != 0"]
+[eval exp="f.textCounter--"]
+[jump target=*refresh]
+[endif]
+[s]
 
 *matta
 [layopt layer=message3 page=fore visible=false]
@@ -1418,8 +1431,57 @@ f.enquiretitle="～事件的解释 1～";
 ;[layopt layer=message2 page=fore visible=true]
 [jump storage=first.ks target=&"f.arrEnquire[f.textCounter].jump"]
 
-*prev
-[if exp="f.textCounter != 0"]
-[eval exp="f.textCounter--"]
-[jump target=*refresh]
+*igiari
+[layopt layer=message3 page=fore visible=false]
+[jump target=&"'*igiari'+f.enquireCounter"]
+
+*igiari4
+[if exp="f.textCounter==2||f.textCounter==3"]
+[csysbutton]
+[jump storage=first.ks target=*0048]
+[else]
+[jump storage=first.ks target=*0047]
+[endif]
+
+*igiari5
+[jump storage=first.ks target=*0056]
+
+*igiari6
+[if exp="f.textCounter==4"]
+[csysbutton]
+[jump storage=first.ks target=*0066]
+[else]
+[jump storage=first.ks target=*0065]
+[endif]
+
+*igiari7
+[if exp="f.textCounter==2"]
+[csysbutton]
+[jump storage=first.ks target=*0078]
+[else]
+[jump storage=first.ks target=*0077]
+[endif]
+
+*igiari8
+[if exp="f.textCounter==3"]
+[csysbutton]
+[jump storage=first.ks target=*0087]
+[else]
+[jump storage=first.ks target=*0086]
+[endif]
+
+*igiari9
+[if exp="f.textCounter==1||f.textCounter==4"]
+[csysbutton]
+[jump storage=first.ks target=*0097]
+[else]
+[jump storage=first.ks target=*0096]
+[endif]
+
+*igiari10
+[if exp="f.textCounter==3"]
+[csysbutton]
+[jump storage=first.ks target=*0109]
+[else]
+[jump storage=first.ks target=*0108]
 [endif]

@@ -51,7 +51,7 @@
 [sysbutton name=prev x=20 y=490 graphic=pre exp="kag.processCall('xunwen.ks', '*prev')"]
 [sysbutton name=next x=750 y=490 graphic=next exp="kag.processCall('xunwen.ks', '*next')"]
 [sysbutton name=weishe x=0 y=0 graphic=tbut1 exp="kag.processCall('xunwen.ks', '*matta')"]
-[sysbutton name=zhizheng x=680 y=0 graphic=tbut2 exp=""]
+[sysbutton name=zhizheng x=680 y=0 graphic=tbut2 exp="kag.processCall('xunwen.ks', '*igiari')"]
 [sysbutton name=hpbar x=360 y=6 normal=hpbar]
 [sysbutton name=hp x=381 y=8 normal=hp]
 [sysbutton name=mp x=381 y=28 normal=mp]
